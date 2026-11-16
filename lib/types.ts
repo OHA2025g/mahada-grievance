@@ -1,0 +1,17 @@
+export const ROLES=['Citizen','Intake','Officer','Supervisor','Developer','Review','Leadership','Audit','Admin'] as const;
+export type Role=typeof ROLES[number];
+export type Values=Record<string,string|number|boolean|string[]>;
+export type CaseRow={id:string;reference:string;kind:string;citizen_id:string|null;citizen_name:string|null;mobile:string|null;title:string;narrative:string|null;preview:string|null;narrative_complete:number;source_portal:string|null;source_token:string|null;source_status:string|null;source_age:number|null;source_updated:string|null;source_nog:string|null;received_date:string;board:string;office:string|null;category:string;stage:string;outcome:string;priority:string;restricted:number;owner_id:string|null;owner_name:string|null;respondent_id:string|null;acceptance:string;original_due:string|null;due_date:string|null;closed_at:string|null;details:string;revision:number;created_at:string;updated_at:string};
+export type RecordRow={id:string;case_id:string|null;type:string;screen:string;status:string;values:string;author_id:string;actor_role:string;assignee_id:string|null;due_date:string|null;parent_id:string|null;version:number;created_at:string;updated_at:string};
+export type EvidenceRow={id:string;case_id:string;filename:string;mime:string;size:number;checksum:string;object_key?:string;version:number;previous_id:string|null;classification:string;citizen_safe:number;respondent_safe:number;description:string|null;review_state:string;uploaded_by:string;uploaded_at:string};
+export type Actor={id:string;email:string;name:string;role:Role;roles:Role[];boards:string[];isOwner:boolean;canRestricted?:boolean};
+export type ApiEnv={DB:D1Database;BUCKET:R2Bucket;OWNER_EMAIL?:string;SEED_DATA_KEY?:string;INITIALIZATION_TOKEN?:string;testSeed?:SeedData};
+export type SourceRow={portal:string;token:string;citizen:string|null;mobile:string|null;preview:string;nog:string|null;office:string;board:string;received:string;updated:string|null;age:number|null;status:string;row:number;raw:Record<string,unknown>};
+export type SeedData={records:SourceRow[];files:{name:string;source:string;checksum:string;bytes:string;rows:number}[];cutoff:string};
+export type Field={label:string;value:string;kind:string;required:boolean;options:string[]};
+export type Screen={id:string;title:string;role:string;template:string;purpose:string;fields:Field[];primary:{label:string;target:string};secondary:{label:string;target:string};case:boolean;stage:string;rules:string[];parent?:string;empty:string;error:string;panels:{title:string;body:string}[];tabs:[string,string][]};
+export const SOURCE_STATUSES=['Auto Closed','Closed','Resolved','Forwarded For Input','Escalated','Reassigned','Transferred','Assigned','Received with Input','Submitted','Send To CPGRAMS'];
+export const TERMINAL=['Auto Closed','Closed','Resolved'];
+export const CATEGORIES=['Lottery and allotment','Deposit, payment and refund','Possession and handover','Estate management','Repairs and amenities','Redevelopment and rehabilitation','Land and encroachment','Building permissions and NOCs','Housing policy and schemes','Mill-worker housing','Establishment and employee matters','Misconduct and vigilance','Other-authority matters','Other / unsure'];
+export const BOARDS=['MHADA VP/CEO office family','Mumbai Board','Repairs / Reconstruction Board','Konkan Board','Pune Board','Other office families','To verify'];
+export const parseValues=(s:string|null|undefined):Values=>{try{return JSON.parse(s||'{}')}catch{return {}}};

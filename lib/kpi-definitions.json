@@ -1,0 +1,722 @@
+[
+  {
+    "role": "Citizen",
+    "metric": "My grievances",
+    "meaning": "Count distinct authorised case IDs.",
+    "calculation_or_required_event": "Count distinct authorised case IDs."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Response requested",
+    "meaning": "Count open citizen-response tasks.",
+    "calculation_or_required_event": "Count open citizen-response tasks."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Next appointments",
+    "meaning": "Count future permitted hearings and visits.",
+    "calculation_or_required_event": "Count future permitted hearings and visits."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Reviews in progress",
+    "meaning": "Count non-final reviews linked to own cases.",
+    "calculation_or_required_event": "Count non-final reviews linked to own cases."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Awaiting decision",
+    "meaning": "Count cases at decision preparation or approval.",
+    "calculation_or_required_event": "Count cases at decision preparation or approval."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Remedy confirmed",
+    "meaning": "Count own confirmations marked Yes.",
+    "calculation_or_required_event": "Count own confirmations marked Yes."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Unresolved issues",
+    "meaning": "Count own issues with unresolved state.",
+    "calculation_or_required_event": "Count own issues with unresolved state."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Evidence submitted",
+    "meaning": "Count own evidence records, not page count.",
+    "calculation_or_required_event": "Count own evidence records, not page count."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Notice acknowledgement",
+    "meaning": "Count unacknowledged authorised notices.",
+    "calculation_or_required_event": "Count unacknowledged authorised notices."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Handling satisfaction",
+    "meaning": "Mean submitted 1\u20135 handling ratings; show response count.",
+    "calculation_or_required_event": "Mean submitted 1\u20135 handling ratings; show response count."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Service timeliness",
+    "meaning": "Measure against approved due dates; show coverage.",
+    "calculation_or_required_event": "Measure against approved due dates; show coverage."
+  },
+  {
+    "role": "Citizen",
+    "metric": "Safe contact status",
+    "meaning": "Show channel verification and safe-contact restriction.",
+    "calculation_or_required_event": "Show channel verification and safe-contact restriction."
+  },
+  {
+    "role": "Intake",
+    "metric": "Source records",
+    "meaning": "1,653 Aaple Sarkar + 282 PG Portal.",
+    "calculation_or_required_event": "1,653 Aaple Sarkar + 282 PG Portal."
+  },
+  {
+    "role": "Intake",
+    "metric": "Source files",
+    "meaning": "Count original input files.",
+    "calculation_or_required_event": "Count original input files."
+  },
+  {
+    "role": "Intake",
+    "metric": "Unique source tokens",
+    "meaning": "Count distinct source-qualified token keys.",
+    "calculation_or_required_event": "Count distinct source-qualified token keys."
+  },
+  {
+    "role": "Intake",
+    "metric": "Duplicate token rows",
+    "meaning": "Total token rows minus distinct source-token keys.",
+    "calculation_or_required_event": "Total token rows minus distinct source-token keys."
+  },
+  {
+    "role": "Intake",
+    "metric": "Full text pending",
+    "meaning": "Count records without confirmed complete narrative.",
+    "calculation_or_required_event": "Count records without confirmed complete narrative."
+  },
+  {
+    "role": "Intake",
+    "metric": "Visible truncation",
+    "meaning": "1,628 Aaple Sarkar + 218 PG Portal.",
+    "calculation_or_required_event": "1,628 Aaple Sarkar + 218 PG Portal."
+  },
+  {
+    "role": "Intake",
+    "metric": "AS NOG labels",
+    "meaning": "Distinct raw Aaple Sarkar NOG labels; not a taxonomy.",
+    "calculation_or_required_event": "Distinct raw Aaple Sarkar NOG labels; not a taxonomy."
+  },
+  {
+    "role": "Intake",
+    "metric": "Missing AS NOG",
+    "meaning": "Count blank NOG in 1,653 Aaple Sarkar rows.",
+    "calculation_or_required_event": "Count blank NOG in 1,653 Aaple Sarkar rows."
+  },
+  {
+    "role": "Intake",
+    "metric": "Missing source update",
+    "meaning": "Count blank source-status update dates.",
+    "calculation_or_required_event": "Count blank source-status update dates."
+  },
+  {
+    "role": "Intake",
+    "metric": "Missing citizen name",
+    "meaning": "Count blank source citizen-name cells.",
+    "calculation_or_required_event": "Count blank source citizen-name cells."
+  },
+  {
+    "role": "Intake",
+    "metric": "Non-terminal labels",
+    "meaning": "Exclude Auto Closed, Closed and Resolved labels.",
+    "calculation_or_required_event": "Exclude Auto Closed, Closed and Resolved labels."
+  },
+  {
+    "role": "Intake",
+    "metric": "Handoff labels",
+    "meaning": "30 Transferred + 1 Send To CPGRAMS.",
+    "calculation_or_required_event": "30 Transferred + 1 Send To CPGRAMS."
+  },
+  {
+    "role": "Officer",
+    "metric": "Assigned cases",
+    "meaning": "Count accepted cases scoped to the officer.",
+    "calculation_or_required_event": "Count accepted cases scoped to the officer."
+  },
+  {
+    "role": "Officer",
+    "metric": "Acceptance pending",
+    "meaning": "Count pending assignments within authorised scope.",
+    "calculation_or_required_event": "Count pending assignments within authorised scope."
+  },
+  {
+    "role": "Officer",
+    "metric": "Inputs to assess",
+    "meaning": "Count received tasks without completeness assessment.",
+    "calculation_or_required_event": "Count received tasks without completeness assessment."
+  },
+  {
+    "role": "Officer",
+    "metric": "Upcoming hearings",
+    "meaning": "Count future authorised hearings in the selected period.",
+    "calculation_or_required_event": "Count future authorised hearings in the selected period."
+  },
+  {
+    "role": "Officer",
+    "metric": "Decision proposals",
+    "meaning": "Count submitted proposals without final approval.",
+    "calculation_or_required_event": "Count submitted proposals without final approval."
+  },
+  {
+    "role": "Officer",
+    "metric": "Actions in progress",
+    "meaning": "Count open approved action records.",
+    "calculation_or_required_event": "Count open approved action records."
+  },
+  {
+    "role": "Officer",
+    "metric": "Actions to verify",
+    "meaning": "Count completed-reported actions without verified result.",
+    "calculation_or_required_event": "Count completed-reported actions without verified result."
+  },
+  {
+    "role": "Officer",
+    "metric": "ATR drafts",
+    "meaning": "Count latest report versions in draft state.",
+    "calculation_or_required_event": "Count latest report versions in draft state."
+  },
+  {
+    "role": "Officer",
+    "metric": "Returned reports",
+    "meaning": "Count latest ATR versions returned for correction.",
+    "calculation_or_required_event": "Count latest ATR versions returned for correction."
+  },
+  {
+    "role": "Officer",
+    "metric": "Updates to send",
+    "meaning": "Count authorised communication tasks not delivered.",
+    "calculation_or_required_event": "Count authorised communication tasks not delivered."
+  },
+  {
+    "role": "Officer",
+    "metric": "Verified remedy rate",
+    "meaning": "Verified implemented remedies / applicable decided cases.",
+    "calculation_or_required_event": "Verified implemented remedies / applicable decided cases."
+  },
+  {
+    "role": "Officer",
+    "metric": "SLA compliance",
+    "meaning": "Within approved due date / eligible completed clocks.",
+    "calculation_or_required_event": "Within approved due date / eligible completed clocks."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Ownership gaps",
+    "meaning": "Count baseline non-terminal records without accepted owner mapping.",
+    "calculation_or_required_event": "Count baseline non-terminal records without accepted owner mapping."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Forwarded for input",
+    "meaning": "Count Forwarded For Input rows.",
+    "calculation_or_required_event": "Count Forwarded For Input rows."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Received with input",
+    "meaning": "Count Received with Input rows.",
+    "calculation_or_required_event": "Count Received with Input rows."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Legacy terminal labels",
+    "meaning": "1,040 Auto Closed + 269 Closed + 277 Resolved.",
+    "calculation_or_required_event": "1,040 Auto Closed + 269 Closed + 277 Resolved."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Handoff verification",
+    "meaning": "30 Transferred + 1 Send To CPGRAMS.",
+    "calculation_or_required_event": "30 Transferred + 1 Send To CPGRAMS."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "No update >30 days",
+    "meaning": "Non-terminal records with source-update age >30 calendar days.",
+    "calculation_or_required_event": "Non-terminal records with source-update age >30 calendar days."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Complete text pending",
+    "meaning": "Count narratives awaiting complete retrieval.",
+    "calculation_or_required_event": "Count narratives awaiting complete retrieval."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Decision approvals",
+    "meaning": "Count proposals awaiting authorised approval.",
+    "calculation_or_required_event": "Count proposals awaiting authorised approval."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "ATR quality pass",
+    "meaning": "Approved quality reviews / completed ATR quality reviews.",
+    "calculation_or_required_event": "Approved quality reviews / completed ATR quality reviews."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Verified closure rate",
+    "meaning": "Evidence-qualified closure approvals / closure submissions.",
+    "calculation_or_required_event": "Evidence-qualified closure approvals / closure submissions."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "SLA compliance",
+    "meaning": "Within due date / eligible completed case clocks.",
+    "calculation_or_required_event": "Within due date / eligible completed case clocks."
+  },
+  {
+    "role": "Supervisor",
+    "metric": "Preventive actions",
+    "meaning": "Count open approved preventive-action obligations.",
+    "calculation_or_required_event": "Count open approved preventive-action obligations."
+  },
+  {
+    "role": "Developer",
+    "metric": "Authorised cases",
+    "meaning": "Count cases explicitly shared with the respondent account.",
+    "calculation_or_required_event": "Count cases explicitly shared with the respondent account."
+  },
+  {
+    "role": "Developer",
+    "metric": "Responses requested",
+    "meaning": "Count served requests without accepted response.",
+    "calculation_or_required_event": "Count served requests without accepted response."
+  },
+  {
+    "role": "Developer",
+    "metric": "Upcoming hearings",
+    "meaning": "Count future respondent-scoped hearings.",
+    "calculation_or_required_event": "Count future respondent-scoped hearings."
+  },
+  {
+    "role": "Developer",
+    "metric": "Directions in progress",
+    "meaning": "Count open directions addressed to the respondent.",
+    "calculation_or_required_event": "Count open directions addressed to the respondent."
+  },
+  {
+    "role": "Developer",
+    "metric": "Notices to acknowledge",
+    "meaning": "Count served notices without acknowledgement.",
+    "calculation_or_required_event": "Count served notices without acknowledgement."
+  },
+  {
+    "role": "Developer",
+    "metric": "Evidence gaps",
+    "meaning": "Count open issue-specific material requests.",
+    "calculation_or_required_event": "Count open issue-specific material requests."
+  },
+  {
+    "role": "Developer",
+    "metric": "Declared obligation",
+    "meaning": "Sum declared obligation for the selected period.",
+    "calculation_or_required_event": "Sum declared obligation for the selected period."
+  },
+  {
+    "role": "Developer",
+    "metric": "Reported payment",
+    "meaning": "Sum reported payments for the selected period.",
+    "calculation_or_required_event": "Sum reported payments for the selected period."
+  },
+  {
+    "role": "Developer",
+    "metric": "Unreconciled difference",
+    "meaning": "Declared obligation minus reported payment.",
+    "calculation_or_required_event": "Declared obligation minus reported payment."
+  },
+  {
+    "role": "Developer",
+    "metric": "Verified payment",
+    "meaning": "Sum independently verified applicable payment amounts.",
+    "calculation_or_required_event": "Sum independently verified applicable payment amounts."
+  },
+  {
+    "role": "Developer",
+    "metric": "Compliance verified",
+    "meaning": "Count directions with verified implementation result.",
+    "calculation_or_required_event": "Count directions with verified implementation result."
+  },
+  {
+    "role": "Developer",
+    "metric": "Response timeliness",
+    "meaning": "On-time accepted responses / eligible served requests.",
+    "calculation_or_required_event": "On-time accepted responses / eligible served requests."
+  },
+  {
+    "role": "Review",
+    "metric": "Review queue",
+    "meaning": "Count active permitted review records.",
+    "calculation_or_required_event": "Count active permitted review records."
+  },
+  {
+    "role": "Review",
+    "metric": "Admissibility pending",
+    "meaning": "Count filings awaiting admissibility determination.",
+    "calculation_or_required_event": "Count filings awaiting admissibility determination."
+  },
+  {
+    "role": "Review",
+    "metric": "New material",
+    "meaning": "Count received review submissions not assessed.",
+    "calculation_or_required_event": "Count received review submissions not assessed."
+  },
+  {
+    "role": "Review",
+    "metric": "Upcoming hearings",
+    "meaning": "Count future authorised review hearings.",
+    "calculation_or_required_event": "Count future authorised review hearings."
+  },
+  {
+    "role": "Review",
+    "metric": "Ordered actions",
+    "meaning": "Count non-final review-ordered action obligations.",
+    "calculation_or_required_event": "Count non-final review-ordered action obligations."
+  },
+  {
+    "role": "Review",
+    "metric": "Further investigation",
+    "meaning": "Count review proposals recommending further investigation.",
+    "calculation_or_required_event": "Count review proposals recommending further investigation."
+  },
+  {
+    "role": "Review",
+    "metric": "Confirmed decisions",
+    "meaning": "Count review decisions confirming the original outcome.",
+    "calculation_or_required_event": "Count review decisions confirming the original outcome."
+  },
+  {
+    "role": "Review",
+    "metric": "Modified decisions",
+    "meaning": "Count review decisions modifying the original outcome.",
+    "calculation_or_required_event": "Count review decisions modifying the original outcome."
+  },
+  {
+    "role": "Review",
+    "metric": "Implementation verified",
+    "meaning": "Verified ordered actions / applicable completed actions.",
+    "calculation_or_required_event": "Verified ordered actions / applicable completed actions."
+  },
+  {
+    "role": "Review",
+    "metric": "Review cycle time",
+    "meaning": "Median calendar or approved working days; disclose basis.",
+    "calculation_or_required_event": "Median calendar or approved working days; disclose basis."
+  },
+  {
+    "role": "Review",
+    "metric": "Filing period assessment",
+    "meaning": "Record procedure, service date, filing date and approved exception.",
+    "calculation_or_required_event": "Record procedure, service date, filing date and approved exception."
+  },
+  {
+    "role": "Review",
+    "metric": "Authority confirmation",
+    "meaning": "Validate approved mechanism and competent authority.",
+    "calculation_or_required_event": "Validate approved mechanism and competent authority."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Historical records",
+    "meaning": "1,653 Aaple Sarkar + 282 PG Portal.",
+    "calculation_or_required_event": "1,653 Aaple Sarkar + 282 PG Portal."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Aaple Sarkar",
+    "meaning": "1,653 / 1,935 = 85.4% rounded to one decimal.",
+    "calculation_or_required_event": "1,653 / 1,935 = 85.4% rounded to one decimal."
+  },
+  {
+    "role": "Leadership",
+    "metric": "PG Portal",
+    "meaning": "282 / 1,935 = 14.6% rounded to one decimal.",
+    "calculation_or_required_event": "282 / 1,935 = 14.6% rounded to one decimal."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Terminal labels",
+    "meaning": "Auto Closed + Closed + Resolved; 1,586 / 1,935.",
+    "calculation_or_required_event": "Auto Closed + Closed + Resolved; 1,586 / 1,935."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Non-terminal labels",
+    "meaning": "All other source labels; 349 / 1,935.",
+    "calculation_or_required_event": "All other source labels; 349 / 1,935."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Handoff cohort",
+    "meaning": "30 Transferred + 1 Send To CPGRAMS.",
+    "calculation_or_required_event": "30 Transferred + 1 Send To CPGRAMS."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Input-related labels",
+    "meaning": "167 Forwarded For Input + 6 Received with Input.",
+    "calculation_or_required_event": "167 Forwarded For Input + 6 Received with Input."
+  },
+  {
+    "role": "Leadership",
+    "metric": "No update >30 days",
+    "meaning": "Non-terminal source records with update age >30 days.",
+    "calculation_or_required_event": "Non-terminal source records with update age >30 days."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Verified remedy rate",
+    "meaning": "Verified implemented remedies / eligible decided cases.",
+    "calculation_or_required_event": "Verified implemented remedies / eligible decided cases."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Citizen confirmation",
+    "meaning": "Confirmed full relief / eligible feedback responses.",
+    "calculation_or_required_event": "Confirmed full relief / eligible feedback responses."
+  },
+  {
+    "role": "Leadership",
+    "metric": "SLA compliance",
+    "meaning": "Within approved deadline / eligible completed clocks.",
+    "calculation_or_required_event": "Within approved deadline / eligible completed clocks."
+  },
+  {
+    "role": "Leadership",
+    "metric": "Confirmed recurring cause",
+    "meaning": "Count evidence-backed issue findings by controlled root cause.",
+    "calculation_or_required_event": "Count evidence-backed issue findings by controlled root cause."
+  },
+  {
+    "role": "Audit",
+    "metric": "Original files",
+    "meaning": "Count preserved original workbooks.",
+    "calculation_or_required_event": "Count preserved original workbooks."
+  },
+  {
+    "role": "Audit",
+    "metric": "Source rows",
+    "meaning": "Sum input rows from both workbooks.",
+    "calculation_or_required_event": "Sum input rows from both workbooks."
+  },
+  {
+    "role": "Audit",
+    "metric": "Source checksums",
+    "meaning": "Count source files with a retained checksum.",
+    "calculation_or_required_event": "Count source files with a retained checksum."
+  },
+  {
+    "role": "Audit",
+    "metric": "Original-row lineage",
+    "meaning": "Count imported records with source-row provenance.",
+    "calculation_or_required_event": "Count imported records with source-row provenance."
+  },
+  {
+    "role": "Audit",
+    "metric": "Duplicate source tokens",
+    "meaning": "Total rows minus distinct source-token keys.",
+    "calculation_or_required_event": "Total rows minus distinct source-token keys."
+  },
+  {
+    "role": "Audit",
+    "metric": "Exact duplicate rows",
+    "meaning": "Count exact duplicate original row payloads.",
+    "calculation_or_required_event": "Count exact duplicate original row payloads."
+  },
+  {
+    "role": "Audit",
+    "metric": "Full narrative pending",
+    "meaning": "Count records without confirmed complete narrative.",
+    "calculation_or_required_event": "Count records without confirmed complete narrative."
+  },
+  {
+    "role": "Audit",
+    "metric": "Masked design rows",
+    "meaning": "Count rows in the anonymised design register.",
+    "calculation_or_required_event": "Count rows in the anonymised design register."
+  },
+  {
+    "role": "Audit",
+    "metric": "Access-review findings",
+    "meaning": "Count unresolved authorised access-review findings.",
+    "calculation_or_required_event": "Count unresolved authorised access-review findings."
+  },
+  {
+    "role": "Audit",
+    "metric": "Decision evidence trace",
+    "meaning": "Decisions with complete issue-to-evidence lineage / decisions reviewed.",
+    "calculation_or_required_event": "Decisions with complete issue-to-evidence lineage / decisions reviewed."
+  },
+  {
+    "role": "Audit",
+    "metric": "Governed export checks",
+    "meaning": "Exports passing all applicable approval and masking checks.",
+    "calculation_or_required_event": "Exports passing all applicable approval and masking checks."
+  },
+  {
+    "role": "Audit",
+    "metric": "Override events",
+    "meaning": "Count versioned authorised override events by period.",
+    "calculation_or_required_event": "Count versioned authorised override events by period."
+  },
+  {
+    "role": "Admin",
+    "metric": "Application roles",
+    "meaning": "Count distinct supported authorisation roles.",
+    "calculation_or_required_event": "Count distinct supported authorisation roles."
+  },
+  {
+    "role": "Admin",
+    "metric": "Supported languages",
+    "meaning": "Count supported service languages.",
+    "calculation_or_required_event": "Count supported service languages."
+  },
+  {
+    "role": "Admin",
+    "metric": "Source portals",
+    "meaning": "Count configured source types in the baseline.",
+    "calculation_or_required_event": "Count configured source types in the baseline."
+  },
+  {
+    "role": "Admin",
+    "metric": "Accepted owner mappings",
+    "meaning": "Count imported cases with configured accepted accountable owner.",
+    "calculation_or_required_event": "Count imported cases with configured accepted accountable owner."
+  },
+  {
+    "role": "Admin",
+    "metric": "Approved SLA policy",
+    "meaning": "Count current approved policies by source and procedure.",
+    "calculation_or_required_event": "Count current approved policies by source and procedure."
+  },
+  {
+    "role": "Admin",
+    "metric": "Working calendar",
+    "meaning": "Validate calendar version and approval.",
+    "calculation_or_required_event": "Validate calendar version and approval."
+  },
+  {
+    "role": "Admin",
+    "metric": "Closure / review policy",
+    "meaning": "Validate current approved policy instruments.",
+    "calculation_or_required_event": "Validate current approved policy instruments."
+  },
+  {
+    "role": "Admin",
+    "metric": "Delivery adapters",
+    "meaning": "Report actual approved adapter connection state.",
+    "calculation_or_required_event": "Report actual approved adapter connection state."
+  },
+  {
+    "role": "Admin",
+    "metric": "Portal write-back",
+    "meaning": "Report actual approved write-back adapter state.",
+    "calculation_or_required_event": "Report actual approved write-back adapter state."
+  },
+  {
+    "role": "Admin",
+    "metric": "Delegation directory",
+    "meaning": "Validate scope, effective dates and approved delegation.",
+    "calculation_or_required_event": "Validate scope, effective dates and approved delegation."
+  },
+  {
+    "role": "Admin",
+    "metric": "Knowledge approvals",
+    "meaning": "Count approved current knowledge-source versions.",
+    "calculation_or_required_event": "Count approved current knowledge-source versions."
+  },
+  {
+    "role": "Admin",
+    "metric": "Retention / access rules",
+    "meaning": "Validate approved classification and retention configuration.",
+    "calculation_or_required_event": "Validate approved classification and retention configuration."
+  },
+  {
+    "role": "Shared",
+    "metric": "Authorised role types",
+    "meaning": "Count supported authorisation roles.",
+    "calculation_or_required_event": "Count supported authorisation roles."
+  },
+  {
+    "role": "Shared",
+    "metric": "Service languages",
+    "meaning": "Count supported language choices.",
+    "calculation_or_required_event": "Count supported language choices."
+  },
+  {
+    "role": "Shared",
+    "metric": "Historical records",
+    "meaning": "Combined original input rows.",
+    "calculation_or_required_event": "Combined original input rows."
+  },
+  {
+    "role": "Shared",
+    "metric": "Preserved sources",
+    "meaning": "Count input files with source lineage.",
+    "calculation_or_required_event": "Count input files with source lineage."
+  },
+  {
+    "role": "Shared",
+    "metric": "Notification delivery",
+    "meaning": "Delivered approved notices / actual delivery attempts.",
+    "calculation_or_required_event": "Delivered approved notices / actual delivery attempts."
+  },
+  {
+    "role": "Shared",
+    "metric": "Unread notifications",
+    "meaning": "Count authorised unread in-app notices.",
+    "calculation_or_required_event": "Count authorised unread in-app notices."
+  },
+  {
+    "role": "Shared",
+    "metric": "Account verification",
+    "meaning": "Show actual account and contact verification state.",
+    "calculation_or_required_event": "Show actual account and contact verification state."
+  },
+  {
+    "role": "Shared",
+    "metric": "Session resumption",
+    "meaning": "Preserve unsent draft and intended destination.",
+    "calculation_or_required_event": "Preserve unsent draft and intended destination."
+  },
+  {
+    "role": "Shared",
+    "metric": "Accessible presentation",
+    "meaning": "Validate keyboard, contrast and assistive technology in build.",
+    "calculation_or_required_event": "Validate keyboard, contrast and assistive technology in build."
+  },
+  {
+    "role": "Shared",
+    "metric": "Safe contact preferences",
+    "meaning": "Show verified preferred channel and consent constraints.",
+    "calculation_or_required_event": "Show verified preferred channel and consent constraints."
+  },
+  {
+    "role": "Shared",
+    "metric": "Assisted intake routes",
+    "meaning": "Count supported assisted channel types.",
+    "calculation_or_required_event": "Count supported assisted channel types."
+  },
+  {
+    "role": "Shared",
+    "metric": "Availability / uptime",
+    "meaning": "Available service minutes / monitored eligible minutes.",
+    "calculation_or_required_event": "Available service minutes / monitored eligible minutes."
+  }
+]

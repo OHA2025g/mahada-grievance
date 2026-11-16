@@ -1,0 +1,10 @@
+{
+  "checks": 2036,
+  "page_routes": 101,
+  "contextual_dialogs": 12,
+  "role_context_roundtrips": 189,
+  "workspaces": 9,
+  "kpi_definitions": 120,
+  "browser_qa": false,
+  "passed": true
+}

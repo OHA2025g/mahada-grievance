@@ -1,0 +1,6261 @@
+{
+  "version": "0.1",
+  "design_date": "2026-10-14",
+  "case_data": "Entirely fictional",
+  "artboard": {
+    "width": 1440,
+    "height": 970
+  },
+  "workspaces": {
+    "Shared": "Access and shared services",
+    "Citizen": "Citizen portal",
+    "Intake": "Intake and nodal team",
+    "Officer": "Case officer",
+    "Supervisor": "Supervisor and board office",
+    "Developer": "Developer / respondent",
+    "Review": "Independent review authority",
+    "Leadership": "Leadership command centre",
+    "Audit": "Audit workspace",
+    "Admin": "System administration"
+  },
+  "home": {
+    "Shared": "S01",
+    "Citizen": "C02",
+    "Intake": "I01",
+    "Officer": "O01",
+    "Supervisor": "V01",
+    "Developer": "D01",
+    "Review": "R01",
+    "Leadership": "L01",
+    "Audit": "A01",
+    "Admin": "T01"
+  },
+  "journeys": [
+    {
+      "id": "citizen",
+      "name": "Citizen registration and tracking",
+      "steps": [
+        "C01",
+        "S02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "M01",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11"
+      ],
+      "handoffs": "Citizen to intake; approved decision returns to the citizen."
+    },
+    {
+      "id": "import",
+      "name": "Controlled historical import",
+      "steps": [
+        "I02",
+        "I03",
+        "I04",
+        "I05",
+        "M12",
+        "I06",
+        "I07",
+        "I08",
+        "O04",
+        "A04"
+      ],
+      "handoffs": "Intake to accountable owner; audit retains file and row lineage."
+    },
+    {
+      "id": "redress",
+      "name": "Investigation to verified remedy",
+      "steps": [
+        "O02",
+        "O03",
+        "O05",
+        "O06",
+        "O07",
+        "O08",
+        "O09",
+        "O13",
+        "O14",
+        "V06",
+        "O15",
+        "O16",
+        "O17",
+        "V07",
+        "V08",
+        "O18",
+        "C10",
+        "C11"
+      ],
+      "handoffs": "Case owner, supporting office, approver, verifier and citizen."
+    },
+    {
+      "id": "redevelopment",
+      "name": "Developer response and hearing",
+      "steps": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "O08",
+        "O11",
+        "D05",
+        "O12",
+        "O13",
+        "V06",
+        "D06",
+        "O16"
+      ],
+      "handoffs": "Developer response is assessed by engineering / competent authorities."
+    },
+    {
+      "id": "review",
+      "name": "Challenge and independent review",
+      "steps": [
+        "C10",
+        "C12",
+        "M09",
+        "C13",
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "C13"
+      ],
+      "handoffs": "Original decision remains preserved; review-ordered actions are verified."
+    },
+    {
+      "id": "legacy",
+      "name": "Legacy closure and coordination review",
+      "steps": [
+        "I13",
+        "V09",
+        "I06",
+        "A04",
+        "R02",
+        "V08",
+        "L05",
+        "V10"
+      ],
+      "handoffs": "Evidence retrieval precedes any authorised local review determination."
+    }
+  ],
+  "pdf_pages": {
+    "S01": 12,
+    "S02": 13,
+    "S03": 14,
+    "S04": 15,
+    "S05": 16,
+    "S06": 17,
+    "C01": 18,
+    "C02": 19,
+    "C03": 20,
+    "C04": 21,
+    "C05": 22,
+    "C06": 23,
+    "C07": 24,
+    "C08": 25,
+    "C09": 26,
+    "C10": 27,
+    "C11": 28,
+    "C12": 29,
+    "C13": 30,
+    "C14": 31,
+    "I01": 32,
+    "I02": 33,
+    "I03": 34,
+    "I04": 35,
+    "I05": 36,
+    "I06": 37,
+    "I07": 38,
+    "I08": 39,
+    "I09": 40,
+    "I10": 41,
+    "I11": 42,
+    "I12": 43,
+    "I13": 44,
+    "O01": 45,
+    "O02": 46,
+    "O03": 47,
+    "O04": 48,
+    "O05": 49,
+    "O06": 50,
+    "O07": 51,
+    "O08": 52,
+    "O09": 53,
+    "O10": 54,
+    "O11": 55,
+    "O12": 56,
+    "O13": 57,
+    "O14": 58,
+    "O15": 59,
+    "O16": 60,
+    "O17": 61,
+    "O18": 62,
+    "O19": 63,
+    "V01": 64,
+    "V02": 65,
+    "V03": 66,
+    "V04": 67,
+    "V05": 68,
+    "V06": 69,
+    "V07": 70,
+    "V08": 71,
+    "V09": 72,
+    "V10": 73,
+    "D01": 74,
+    "D02": 75,
+    "D03": 76,
+    "D04": 77,
+    "D05": 78,
+    "D06": 79,
+    "R01": 80,
+    "R02": 81,
+    "R03": 82,
+    "R04": 83,
+    "R05": 84,
+    "R06": 85,
+    "R07": 86,
+    "R08": 87,
+    "L01": 88,
+    "L02": 89,
+    "L03": 90,
+    "L04": 91,
+    "L05": 92,
+    "L06": 93,
+    "A01": 94,
+    "A02": 95,
+    "A03": 96,
+    "A04": 97,
+    "A05": 98,
+    "A06": 99,
+    "T01": 100,
+    "T02": 101,
+    "T03": 102,
+    "T04": 103,
+    "T05": 104,
+    "T06": 105,
+    "T07": 106,
+    "T08": 107,
+    "T09": 108,
+    "T10": 109,
+    "T11": 110,
+    "T12": 111,
+    "T13": 112,
+    "M01": 113,
+    "M02": 114,
+    "M03": 115,
+    "M04": 116,
+    "M05": 117,
+    "M06": 118,
+    "M07": 119,
+    "M08": 120,
+    "M09": 121,
+    "M10": 122,
+    "M11": 123,
+    "M12": 124
+  },
+  "screens": [
+    {
+      "id": "S01",
+      "title": "Choose your workspace",
+      "role": "Shared",
+      "template": "access",
+      "purpose": "Route each user to the appropriate authorised workspace.",
+      "primary": {
+        "label": "Continue to sign in",
+        "target": "S02"
+      },
+      "secondary": {
+        "label": "Open citizen home",
+        "target": "C01"
+      },
+      "fields": [
+        {
+          "label": "Workspace",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Shared",
+            "Citizen",
+            "Intake",
+            "Officer",
+            "Supervisor",
+            "Developer",
+            "Review",
+            "Leadership",
+            "Audit",
+            "Admin"
+          ]
+        },
+        {
+          "label": "Language",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "English",
+            "Marathi",
+            "Hindi"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "The authenticated account determines actual permissions.",
+        "A workspace choice alone does not grant access."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "S02",
+      "title": "Sign in and verify contact",
+      "role": "Shared",
+      "template": "auth",
+      "purpose": "Verify the selected sign-in method and offer assisted access.",
+      "primary": {
+        "label": "Verify and continue",
+        "target": "C02"
+      },
+      "secondary": {
+        "label": "Change workspace",
+        "target": "S01"
+      },
+      "fields": [
+        {
+          "label": "Account type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Citizen",
+            "Department SSO",
+            "Developer"
+          ]
+        },
+        {
+          "label": "Mobile / email",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Verification code",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Invalid or expired code stays on this screen.",
+        "Retain the intended destination after successful sign-in."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "The verification code is invalid or expired. Request a new code."
+    },
+    {
+      "id": "S03",
+      "title": "Session expired - resume safely",
+      "role": "Shared",
+      "template": "message",
+      "purpose": "Restore access while preserving unsent work.",
+      "primary": {
+        "label": "Sign in again",
+        "target": "S02"
+      },
+      "secondary": {
+        "label": "Return to access",
+        "target": "S01"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "S04",
+      "title": "Notifications and reminders",
+      "role": "Shared",
+      "template": "queue",
+      "purpose": "Show actionable notices with delivery and read state.",
+      "primary": {
+        "label": "Open selected notification",
+        "target": "O06"
+      },
+      "secondary": {
+        "label": "Notification preferences",
+        "target": "S06"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "All notices",
+        "Unread",
+        "Case reference",
+        "Delivery status"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "S05",
+      "title": "Search cases, properties and evidence",
+      "role": "Shared",
+      "template": "search",
+      "purpose": "Search permitted records without exposing restricted matches.",
+      "primary": {
+        "label": "Open selected result",
+        "target": "O02"
+      },
+      "secondary": {
+        "label": "Back to workspace",
+        "target": "S01"
+      },
+      "fields": [
+        {
+          "label": "Search terms",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Search scope",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Cases",
+            "Properties",
+            "Evidence",
+            "Policies"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "Board",
+        "Category",
+        "Source",
+        "Date range"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "S06",
+      "title": "Profile and accessibility preferences",
+      "role": "Shared",
+      "template": "form",
+      "purpose": "Manage safe contact preferences and accessible presentation.",
+      "primary": {
+        "label": "Save preferences",
+        "target": "S04"
+      },
+      "secondary": {
+        "label": "Back to workspace",
+        "target": "S01"
+      },
+      "fields": [
+        {
+          "label": "Display name",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Preferred language",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "English",
+            "Marathi",
+            "Hindi"
+          ]
+        },
+        {
+          "label": "Safe contact channel",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "SMS",
+            "Email",
+            "Assisted callback"
+          ]
+        },
+        {
+          "label": "Text size",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Standard",
+            "Large"
+          ]
+        },
+        {
+          "label": "High contrast",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Off",
+            "On"
+          ]
+        },
+        {
+          "label": "Representative access",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "None",
+            "Authorised representative"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Preference changes do not modify earlier complaint text.",
+        "Keep safe-contact restrictions visible to staff."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C01",
+      "title": "Citizen service home",
+      "role": "Citizen",
+      "template": "public",
+      "purpose": "Explain the complaint route and provide accessible entry points.",
+      "primary": {
+        "label": "Register a grievance",
+        "target": "C03"
+      },
+      "secondary": {
+        "label": "Track a grievance",
+        "target": "C08"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Describe the grievance route separately from a fresh service application.",
+        "Offer Marathi, Hindi, English and assisted channels."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C02",
+      "title": "My grievances",
+      "role": "Citizen",
+      "template": "dashboard",
+      "purpose": "Show the citizen their own cases, next steps and unresolved elements.",
+      "primary": {
+        "label": "New grievance",
+        "target": "C03"
+      },
+      "secondary": {
+        "label": "My appointments",
+        "target": "C14"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C03",
+      "title": "New grievance - describe the issue",
+      "role": "Citizen",
+      "template": "wizard",
+      "purpose": "Capture the original narrative, affected person and requested outcome.",
+      "primary": {
+        "label": "Continue to references",
+        "target": "C04"
+      },
+      "secondary": {
+        "label": "Save draft and return",
+        "target": "C02"
+      },
+      "fields": [
+        {
+          "label": "Submitted by",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Self",
+            "Representative"
+          ]
+        },
+        {
+          "label": "Affected person",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Preferred contact",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Verified channel",
+            "Assisted callback"
+          ]
+        },
+        {
+          "label": "Service category",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Deposit / refund",
+            "Possession",
+            "Repairs",
+            "Redevelopment",
+            "Other"
+          ]
+        },
+        {
+          "label": "When did it happen?",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Urgent impact",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "No immediate danger",
+            "Possible danger",
+            "Essential service denied"
+          ]
+        },
+        {
+          "label": "What happened?",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Requested outcome",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Preserve the original narrative and language.",
+        "Do not require evidence that the grievance concerns failure to receive."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C04",
+      "title": "New grievance - service and property",
+      "role": "Citizen",
+      "template": "wizard",
+      "purpose": "Capture enough reference information to identify jurisdiction.",
+      "primary": {
+        "label": "Continue to evidence",
+        "target": "C05"
+      },
+      "secondary": {
+        "label": "Back to description",
+        "target": "C03"
+      },
+      "fields": [
+        {
+          "label": "Board",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Mumbai Board",
+            "Konkan Board",
+            "Other / unsure"
+          ]
+        },
+        {
+          "label": "Service / scheme",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Application reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "District / city",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Colony / building",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Plot / CTS reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Tenement / unit",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Incident location",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Earlier grievance reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Representative authorisation",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Missing optional property identifiers must not become invented values.",
+        "Retain reference types separately."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C05",
+      "title": "New grievance - supporting evidence",
+      "role": "Citizen",
+      "template": "upload",
+      "purpose": "Preserve originals and describe what each item supports.",
+      "primary": {
+        "label": "Review submission",
+        "target": "C06"
+      },
+      "secondary": {
+        "label": "Back to references",
+        "target": "C04"
+      },
+      "fields": [
+        {
+          "label": "Evidence type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Payment receipt",
+            "Letter",
+            "Photograph",
+            "Other"
+          ]
+        },
+        {
+          "label": "Choose file",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Description",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Document date",
+          "value": "",
+          "kind": "date",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Sensitive content",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Normal",
+            "Restricted review requested"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "One attachment could not be accepted. Explain the file-specific reason and retain the draft."
+    },
+    {
+      "id": "C06",
+      "title": "New grievance - review and submit",
+      "role": "Citizen",
+      "template": "review",
+      "purpose": "Let the citizen correct details before durable registration.",
+      "primary": {
+        "label": "Submit grievance",
+        "target": "M01"
+      },
+      "secondary": {
+        "label": "Edit evidence",
+        "target": "C05"
+      },
+      "fields": [
+        {
+          "label": "Original narrative",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Requested remedy",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Source channel",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Contact preference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Declaration",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Required facts and declarations must be completed before confirmation.",
+        "A technical retry must not create another submission."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C07",
+      "title": "Grievance registered",
+      "role": "Citizen",
+      "template": "message",
+      "purpose": "Provide a stable reference and clear next steps.",
+      "primary": {
+        "label": "Track my case",
+        "target": "C08"
+      },
+      "secondary": {
+        "label": "My grievances",
+        "target": "C02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Acknowledgement follows successful storage.",
+        "Do not promise an unapproved final deadline."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C08",
+      "title": "Track grievance and timeline",
+      "role": "Citizen",
+      "template": "timeline",
+      "purpose": "Explain progress and show what action remains.",
+      "primary": {
+        "label": "Respond to clarification",
+        "target": "C09"
+      },
+      "secondary": {
+        "label": "View decision",
+        "target": "C10"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Source status and internal progress remain separate.",
+        "Show citizen-safe events; retain restricted internal records."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Awaiting supporting information",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C09",
+      "title": "Provide clarification or documents",
+      "role": "Citizen",
+      "template": "form",
+      "purpose": "Capture the precise response requested by the case owner.",
+      "primary": {
+        "label": "Send clarification",
+        "target": "C08"
+      },
+      "secondary": {
+        "label": "Return to tracking",
+        "target": "C08"
+      },
+      "fields": [
+        {
+          "label": "Request",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Citizen response",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Additional evidence",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Need assisted contact?",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "No",
+            "Yes"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Show the request date and applicable response expectation.",
+        "Do not silently restart the original service clock."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Clarification requested",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C10",
+      "title": "Decision and action taken report",
+      "role": "Citizen",
+      "template": "document",
+      "purpose": "Explain the issue findings, implemented action and challenge route.",
+      "primary": {
+        "label": "Give outcome feedback",
+        "target": "C11"
+      },
+      "secondary": {
+        "label": "Request review",
+        "target": "C12"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "State reasons when the requested remedy is not granted.",
+        "Do not describe a pending payment as delivered."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Decision communicated",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C11",
+      "title": "Confirm remedy and give feedback",
+      "role": "Citizen",
+      "template": "form",
+      "purpose": "Separate receipt of remedy from satisfaction with handling.",
+      "primary": {
+        "label": "Submit feedback",
+        "target": "C08"
+      },
+      "secondary": {
+        "label": "Request review",
+        "target": "C12"
+      },
+      "fields": [
+        {
+          "label": "Did the remedy reach you?",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "Partly",
+            "No",
+            "Unable to confirm"
+          ]
+        },
+        {
+          "label": "What remains unresolved?",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Handling satisfaction",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Satisfied",
+            "Dissatisfied",
+            "Prefer not to rate"
+          ]
+        },
+        {
+          "label": "Was the explanation clear?",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "label": "Further evidence",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Non-response is confirmation unavailable, not positive feedback.",
+        "Keep feedback reasons and the relevant case cohort."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Citizen outcome confirmation",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C12",
+      "title": "Request review or appeal",
+      "role": "Citizen",
+      "template": "wizard",
+      "purpose": "Capture the grounds and direct the request to the applicable mechanism.",
+      "primary": {
+        "label": "Review request details",
+        "target": "M09"
+      },
+      "secondary": {
+        "label": "Back to decision",
+        "target": "C10"
+      },
+      "fields": [
+        {
+          "label": "Mechanism",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Reopening",
+            "Reconsideration",
+            "Prescribed appeal"
+          ]
+        },
+        {
+          "label": "Decision reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Grounds for challenge",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "New material",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Requested correction",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Safe contact",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "An internal review is not automatically an external portal appeal.",
+        "Verify the case-specific authority and admissibility."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Challenge draft",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C13",
+      "title": "Track review and appeal",
+      "role": "Citizen",
+      "template": "timeline",
+      "purpose": "Show independent review progress and follow-up actions.",
+      "primary": {
+        "label": "View review outcome",
+        "target": "R08"
+      },
+      "secondary": {
+        "label": "My grievances",
+        "target": "C02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Independent review",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "C14",
+      "title": "Appointments and hearings",
+      "role": "Citizen",
+      "template": "calendar",
+      "purpose": "Provide accessible hearing notices and attendance options.",
+      "primary": {
+        "label": "Open hearing notice",
+        "target": "O11"
+      },
+      "secondary": {
+        "label": "Track case",
+        "target": "C08"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I01",
+      "title": "Intake control desk",
+      "role": "Intake",
+      "template": "dashboard",
+      "purpose": "Coordinate incoming work, incomplete records and responsibility checks.",
+      "primary": {
+        "label": "Import source export",
+        "target": "I02"
+      },
+      "secondary": {
+        "label": "Urgent triage",
+        "target": "I10"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "Source",
+        "Board",
+        "Source status",
+        "Age band"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I02",
+      "title": "Import a source export",
+      "role": "Intake",
+      "template": "upload",
+      "purpose": "Preserve the original file and initialise a controlled import batch.",
+      "primary": {
+        "label": "Map columns",
+        "target": "I03"
+      },
+      "secondary": {
+        "label": "Intake desk",
+        "target": "I01"
+      },
+      "fields": [
+        {
+          "label": "Source portal",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Aaple Sarkar",
+            "PG Portal",
+            "MHADA specialised GRMS"
+          ]
+        },
+        {
+          "label": "Export file",
+          "value": "",
+          "kind": "file",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Export cutoff",
+          "value": "",
+          "kind": "date",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Export filters",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Import purpose",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Historical enrichment",
+            "Incremental update"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "The file is unsupported or its schema is unreadable. Keep a file-specific rejection record."
+    },
+    {
+      "id": "I03",
+      "title": "Map source columns",
+      "role": "Intake",
+      "template": "mapping",
+      "purpose": "Map each source field without silently changing its meaning.",
+      "primary": {
+        "label": "Validate mapped rows",
+        "target": "I04"
+      },
+      "secondary": {
+        "label": "Change source file",
+        "target": "I02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I04",
+      "title": "Validate rows and resolve exceptions",
+      "role": "Intake",
+      "template": "queue",
+      "purpose": "Explain row-level failures and keep unresolved values explicit.",
+      "primary": {
+        "label": "Review reconciliation",
+        "target": "I05"
+      },
+      "secondary": {
+        "label": "Mapping",
+        "target": "I03"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Do not discard accepted rows because other rows need review.",
+        "Preserve rejected rows, reasons and source positions."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I05",
+      "title": "Reconcile and commit import",
+      "role": "Intake",
+      "template": "comparison",
+      "purpose": "Confirm record counts and status totals before committing the batch.",
+      "primary": {
+        "label": "Commit reconciled batch",
+        "target": "M12"
+      },
+      "secondary": {
+        "label": "Resolve exceptions",
+        "target": "I04"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Reconcile each source and the combined totals independently.",
+        "Keep the approved batch receipt and snapshot."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I06",
+      "title": "Retrieve complete case records",
+      "role": "Intake",
+      "template": "detail",
+      "purpose": "Track enrichment of previews, ATRs, attachments and histories.",
+      "primary": {
+        "label": "Classify enriched case",
+        "target": "I07"
+      },
+      "secondary": {
+        "label": "Triage with limitations",
+        "target": "I07"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Urgent assessment can proceed while enrichment continues.",
+        "Never invent missing case history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Full-text retrieval pending",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I07",
+      "title": "Classify issues and prioritise",
+      "role": "Intake",
+      "template": "form",
+      "purpose": "Confirm operational categories, requested remedies and uncertainty.",
+      "primary": {
+        "label": "Confirm jurisdiction",
+        "target": "I08"
+      },
+      "secondary": {
+        "label": "Related-case check",
+        "target": "I09"
+      },
+      "fields": [
+        {
+          "label": "Submission type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Grievance",
+            "Service request",
+            "Query",
+            "Review"
+          ]
+        },
+        {
+          "label": "Category",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Deposit / refund",
+            "Possession",
+            "Repairs",
+            "Redevelopment",
+            "Other"
+          ]
+        },
+        {
+          "label": "Subcategory",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Additional issue",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Requested remedy",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Priority",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Critical",
+            "High",
+            "Normal",
+            "Routine"
+          ]
+        },
+        {
+          "label": "Priority reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Uncertainty",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Triage",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I08",
+      "title": "Jurisdiction and assignment routing",
+      "role": "Intake",
+      "template": "routing",
+      "purpose": "Select a responsible office and accountable owner with a reason.",
+      "primary": {
+        "label": "Send assignment",
+        "target": "O04"
+      },
+      "secondary": {
+        "label": "External referral",
+        "target": "I11"
+      },
+      "fields": [
+        {
+          "label": "Board",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Mumbai Board",
+            "Konkan Board",
+            "Other"
+          ]
+        },
+        {
+          "label": "Department / zone",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Lead office",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Relevant board function",
+            "Nodal coordination"
+          ]
+        },
+        {
+          "label": "Case owner",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Officer A - sample",
+            "Officer B - sample"
+          ]
+        },
+        {
+          "label": "Supporting office",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Supervisor",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Routing reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Ownership routing",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I09",
+      "title": "Review related records and reminders",
+      "role": "Intake",
+      "template": "comparison",
+      "purpose": "Link related incidents without erasing separate citizen obligations.",
+      "primary": {
+        "label": "Confirm a reviewed link",
+        "target": "M03"
+      },
+      "secondary": {
+        "label": "Continue triage",
+        "target": "I07"
+      },
+      "fields": [
+        {
+          "label": "Relationship",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Same incident",
+            "Reminder",
+            "Shared investigation",
+            "Recurrence"
+          ]
+        },
+        {
+          "label": "Reason and evidence",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Relationship review",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I10",
+      "title": "Urgent and restricted-case triage",
+      "role": "Intake",
+      "template": "form",
+      "purpose": "Escalate urgent impact and protect sensitive allegations.",
+      "primary": {
+        "label": "Create restricted referral",
+        "target": "M06"
+      },
+      "secondary": {
+        "label": "Monitor escalation",
+        "target": "V05"
+      },
+      "fields": [
+        {
+          "label": "Risk type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Possible building danger",
+            "Essential service denial",
+            "Misconduct allegation"
+          ]
+        },
+        {
+          "label": "Immediate impact",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Interim action",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Restricted visibility",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Designated investigators",
+            "Normal case visibility"
+          ]
+        },
+        {
+          "label": "Safe contact method",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Receiving authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Urgent assessment",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I11",
+      "title": "Transfer and handoff verification",
+      "role": "Intake",
+      "template": "queue",
+      "purpose": "Confirm destination, acceptance and remaining responsibility.",
+      "primary": {
+        "label": "Record receiving acceptance",
+        "target": "V05"
+      },
+      "secondary": {
+        "label": "Routing desk",
+        "target": "I08"
+      },
+      "fields": [
+        {
+          "label": "Destination authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Dispatch reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Acceptance evidence",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "MHADA obligation",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I12",
+      "title": "Assisted telephone and counter intake",
+      "role": "Intake",
+      "template": "form",
+      "purpose": "Capture paper or voice submissions with read-back confirmation.",
+      "primary": {
+        "label": "Review assisted submission",
+        "target": "C06"
+      },
+      "secondary": {
+        "label": "Intake desk",
+        "target": "I01"
+      },
+      "fields": [
+        {
+          "label": "Channel",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Telephone",
+            "Counter",
+            "Paper application"
+          ]
+        },
+        {
+          "label": "Affected person",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Representation",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Self",
+            "Representative"
+          ]
+        },
+        {
+          "label": "Safe contact",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Original receipt reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Preferred language",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Marathi",
+            "Hindi",
+            "English"
+          ]
+        },
+        {
+          "label": "Citizen narrative",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Read-back confirmation",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "I13",
+      "title": "Legacy closure review queue",
+      "role": "Intake",
+      "template": "queue",
+      "purpose": "Identify legacy closures needing evidence or authorised review.",
+      "primary": {
+        "label": "Open closure evidence review",
+        "target": "V09"
+      },
+      "secondary": {
+        "label": "Audit lineage",
+        "target": "A04"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O01",
+      "title": "My work and next actions",
+      "role": "Officer",
+      "template": "dashboard",
+      "purpose": "Prioritise accepted cases, overdue tasks and the next substantive action.",
+      "primary": {
+        "label": "Open a case",
+        "target": "O02"
+      },
+      "secondary": {
+        "label": "Accept assignment",
+        "target": "O04"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "Priority",
+        "Task due",
+        "Stage",
+        "Category"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O02",
+      "title": "Case overview and source record",
+      "role": "Officer",
+      "template": "detail",
+      "purpose": "Keep the original narrative, source state and internal work visible.",
+      "primary": {
+        "label": "Review issue breakdown",
+        "target": "O03"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [
+        [
+          "Overview",
+          "O02"
+        ],
+        [
+          "Issues",
+          "O03"
+        ],
+        [
+          "Evidence",
+          "O08"
+        ],
+        [
+          "Actions",
+          "O15"
+        ],
+        [
+          "History",
+          "A02"
+        ]
+      ],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Under investigation",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O03",
+      "title": "Issues and requested remedies",
+      "role": "Officer",
+      "template": "issues",
+      "purpose": "Split a compound complaint into independently assessed issues.",
+      "primary": {
+        "label": "Create investigation plan",
+        "target": "O05"
+      },
+      "secondary": {
+        "label": "Case overview",
+        "target": "O02"
+      },
+      "fields": [
+        {
+          "label": "Add an issue",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Requested remedy",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Scope / affected reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [
+        [
+          "Overview",
+          "O02"
+        ],
+        [
+          "Issues",
+          "O03"
+        ],
+        [
+          "Evidence",
+          "O08"
+        ],
+        [
+          "Actions",
+          "O15"
+        ],
+        [
+          "History",
+          "A02"
+        ]
+      ],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Issue definition",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O04",
+      "title": "Accept, reassign or decline ownership",
+      "role": "Officer",
+      "template": "approval",
+      "purpose": "Make ownership explicit and provide a justified alternative when needed.",
+      "primary": {
+        "label": "Accept assignment",
+        "target": "O02"
+      },
+      "secondary": {
+        "label": "Decline with reason",
+        "target": "M04"
+      },
+      "fields": [
+        {
+          "label": "Assigned designation",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Acceptance",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Accept",
+            "Request reassignment"
+          ]
+        },
+        {
+          "label": "Jurisdiction check",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Conflict check",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Routing observation",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record acceptance time and actor.",
+        "No active case may disappear into an unowned queue."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Assignment awaiting acceptance",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O05",
+      "title": "Investigation plan",
+      "role": "Officer",
+      "template": "form",
+      "purpose": "Define what evidence and actions will establish each issue.",
+      "primary": {
+        "label": "Request supporting input",
+        "target": "O06"
+      },
+      "secondary": {
+        "label": "Field inspection",
+        "target": "O10"
+      },
+      "fields": [
+        {
+          "label": "Issue scope",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Known facts",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Outstanding questions",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Records to examine",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Inspection / hearing",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Not required",
+            "Inspection",
+            "Hearing"
+          ]
+        },
+        {
+          "label": "Next update date",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Investigation planning",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O06",
+      "title": "Request input from another office",
+      "role": "Officer",
+      "template": "form",
+      "purpose": "Create a defined supporting task while retaining case ownership.",
+      "primary": {
+        "label": "Issue input task",
+        "target": "O07"
+      },
+      "secondary": {
+        "label": "Input-delay intervention",
+        "target": "V04"
+      },
+      "fields": [
+        {
+          "label": "Supporting office",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Accounts support",
+            "Engineering",
+            "Estate",
+            "Legal"
+          ]
+        },
+        {
+          "label": "Required input",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Records / period",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Task due date",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Requested evidence",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Escalation contact",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Supporting input requested",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O07",
+      "title": "Assess received input",
+      "role": "Officer",
+      "template": "comparison",
+      "purpose": "Check supporting replies against the question and evidence requested.",
+      "primary": {
+        "label": "Accept input and continue",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Return specific request",
+        "target": "O06"
+      },
+      "fields": [
+        {
+          "label": "Response completeness",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Complete",
+            "Partly complete",
+            "Further information needed"
+          ]
+        },
+        {
+          "label": "Assessment notes",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Input assessment",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O08",
+      "title": "Evidence catalogue and provenance",
+      "role": "Officer",
+      "template": "evidence",
+      "purpose": "Organise evidence by issue, authority, version and what it establishes.",
+      "primary": {
+        "label": "Open evidence page",
+        "target": "O09"
+      },
+      "secondary": {
+        "label": "Replace with new version",
+        "target": "M02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [
+        [
+          "Overview",
+          "O02"
+        ],
+        [
+          "Issues",
+          "O03"
+        ],
+        [
+          "Evidence",
+          "O08"
+        ],
+        [
+          "Actions",
+          "O15"
+        ],
+        [
+          "History",
+          "A02"
+        ]
+      ],
+      "rules": [
+        "Record source, retrieval time and checksum.",
+        "Restricted items require case-level access checks."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Evidence assessment",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O09",
+      "title": "Document viewer and cited facts",
+      "role": "Officer",
+      "template": "document",
+      "purpose": "Read the original page beside extracted facts and uncertainty.",
+      "primary": {
+        "label": "Return to evidence",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Restricted-access state",
+        "target": "M10"
+      },
+      "fields": [
+        {
+          "label": "Evidence reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Page",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Reviewer note",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Keep source, inference and confirmed finding distinguishable.",
+        "Do not substitute OCR text for the original page."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Document verification",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O10",
+      "title": "Field inspection record",
+      "role": "Officer",
+      "template": "inspection",
+      "purpose": "Specify and document a contextualised field verification.",
+      "primary": {
+        "label": "Save field report",
+        "target": "O13"
+      },
+      "secondary": {
+        "label": "Investigation plan",
+        "target": "O05"
+      },
+      "fields": [
+        {
+          "label": "Inspection purpose",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Assigned inspector",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Location / property",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Visit date",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Observed facts",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Statements / parties",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Photos and records",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Location verification",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Verified coordinates",
+            "Not supplied"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Field verification",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O11",
+      "title": "Issue hearing notice",
+      "role": "Officer",
+      "template": "calendar",
+      "purpose": "Schedule a hearing and record notice service and accessibility.",
+      "primary": {
+        "label": "Issue hearing notice",
+        "target": "D05"
+      },
+      "secondary": {
+        "label": "Reschedule hearing",
+        "target": "M08"
+      },
+      "fields": [
+        {
+          "label": "Hearing purpose",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Hearing date",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Venue / approved mode",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Participants",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Documents requested",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Access requirements",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Notice channel",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Email",
+            "SMS with reference",
+            "Post / counter"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Hearing preparation",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O12",
+      "title": "Hearing minutes and directions",
+      "role": "Officer",
+      "template": "form",
+      "purpose": "Preserve attendance, submissions and authorised follow-up directions.",
+      "primary": {
+        "label": "Record findings",
+        "target": "O13"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "fields": [
+        {
+          "label": "Hearing reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Attendance",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Citizen statement",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Respondent statement",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Documents examined",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Directions / follow-up",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Next milestone",
+          "value": "",
+          "kind": "date",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Hearing record",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O13",
+      "title": "Issue findings and root cause",
+      "role": "Officer",
+      "template": "findings",
+      "purpose": "Connect each finding to evidence and state limitations.",
+      "primary": {
+        "label": "Propose decision and remedy",
+        "target": "O14"
+      },
+      "secondary": {
+        "label": "Get more input",
+        "target": "O06"
+      },
+      "fields": [
+        {
+          "label": "Finding category",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Substantiated",
+            "Partly substantiated",
+            "Not substantiated",
+            "Undetermined"
+          ]
+        },
+        {
+          "label": "Reasoned finding",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Root cause",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Processing / coordination",
+            "Record error",
+            "Technical failure",
+            "Uncertain"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Findings draft",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O14",
+      "title": "Decision and remedy proposal",
+      "role": "Officer",
+      "template": "approval",
+      "purpose": "Define authorised actions and route them for competent approval.",
+      "primary": {
+        "label": "Send for approval",
+        "target": "V06"
+      },
+      "secondary": {
+        "label": "Findings",
+        "target": "O13"
+      },
+      "fields": [
+        {
+          "label": "Proposed outcome",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Authorised remedy",
+            "Reasoned adverse decision",
+            "Referral",
+            "Partial action"
+          ]
+        },
+        {
+          "label": "Issue findings",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Proposed action",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Approving designation",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Action executor",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Implementation due date",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Verification evidence",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Decision proposal",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O15",
+      "title": "Execute approved remedy actions",
+      "role": "Officer",
+      "template": "actions",
+      "purpose": "Track instructions, downstream processing and actual implementation.",
+      "primary": {
+        "label": "Verify completed action",
+        "target": "O16"
+      },
+      "secondary": {
+        "label": "Integration exception",
+        "target": "T09"
+      },
+      "fields": [
+        {
+          "label": "Action reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Execution result",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Processing",
+            "Completed",
+            "Failed"
+          ]
+        },
+        {
+          "label": "Transaction / service reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Implementation evidence",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [
+        [
+          "Overview",
+          "O02"
+        ],
+        [
+          "Issues",
+          "O03"
+        ],
+        [
+          "Evidence",
+          "O08"
+        ],
+        [
+          "Actions",
+          "O15"
+        ],
+        [
+          "History",
+          "A02"
+        ]
+      ],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Remedy execution",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O16",
+      "title": "Verify remedy implementation",
+      "role": "Officer",
+      "template": "verification",
+      "purpose": "Check the effect of the approved action before recording delivery.",
+      "primary": {
+        "label": "Prepare action taken report",
+        "target": "O17"
+      },
+      "secondary": {
+        "label": "Return to action execution",
+        "target": "O15"
+      },
+      "fields": [
+        {
+          "label": "Action checked",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Verification method",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Transaction and service record",
+            "Inspection",
+            "Citizen confirmation"
+          ]
+        },
+        {
+          "label": "Evidence reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Observed result",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Implementation conclusion",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Verified",
+            "Partly verified",
+            "Failed",
+            "Not yet verified"
+          ]
+        },
+        {
+          "label": "Citizen confirmation",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Confirmed",
+            "Disputed",
+            "Unavailable"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "An instruction or API acknowledgement is not completion evidence.",
+        "Never convert absent citizen confirmation into satisfaction."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Implementation verification",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O17",
+      "title": "Draft action taken report",
+      "role": "Officer",
+      "template": "document",
+      "purpose": "Draft an issue-complete report from findings and verified action records.",
+      "primary": {
+        "label": "Send ATR for quality review",
+        "target": "V07"
+      },
+      "secondary": {
+        "label": "Verification record",
+        "target": "O16"
+      },
+      "fields": [
+        {
+          "label": "Grievance summary",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Investigation and evidence",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Findings and decision",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Implemented action / limitations",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Challenge route",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "ATR drafting",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O18",
+      "title": "Communicate decision and updates",
+      "role": "Officer",
+      "template": "communication",
+      "purpose": "Send the approved message through a safe channel and record delivery.",
+      "primary": {
+        "label": "Send approved communication",
+        "target": "C10"
+      },
+      "secondary": {
+        "label": "Retry failed message",
+        "target": "M11"
+      },
+      "fields": [
+        {
+          "label": "Message type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Acknowledgement",
+            "Progress",
+            "Clarification",
+            "Decision"
+          ]
+        },
+        {
+          "label": "Recipient",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Safe channel",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Verified email",
+            "SMS reference",
+            "Assisted contact"
+          ]
+        },
+        {
+          "label": "Language",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "English",
+            "Marathi",
+            "Hindi"
+          ]
+        },
+        {
+          "label": "Message content",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Approved document",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Decision communication",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "O19",
+      "title": "Policy lookup and officer assistance",
+      "role": "Officer",
+      "template": "search",
+      "purpose": "Retrieve applicable controlled policy and show cited context.",
+      "primary": {
+        "label": "Use cited policy in proposal",
+        "target": "O14"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "fields": [
+        {
+          "label": "Question",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Scope",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Refund / selected scheme",
+            "Estate",
+            "Redevelopment",
+            "Other"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "An AI suggestion is not the competent authority's decision.",
+        "Keep controlled policies separate from case allegations."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Policy research",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V01",
+      "title": "Board operations dashboard",
+      "role": "Supervisor",
+      "template": "dashboard",
+      "purpose": "Monitor ownership, stalled work and evidence-backed outcomes.",
+      "primary": {
+        "label": "Review workload",
+        "target": "V02"
+      },
+      "secondary": {
+        "label": "Quality-review queue",
+        "target": "V07"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "Board",
+        "Office",
+        "Source",
+        "Due cohort"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V02",
+      "title": "Workload and assignment planning",
+      "role": "Supervisor",
+      "template": "workload",
+      "purpose": "Balance task responsibility using current designations and capacity.",
+      "primary": {
+        "label": "Resolve unaccepted work",
+        "target": "V03"
+      },
+      "secondary": {
+        "label": "Officer delegation",
+        "target": "T02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V03",
+      "title": "Unaccepted assignments and ownership gaps",
+      "role": "Supervisor",
+      "template": "queue",
+      "purpose": "Intervene where an assignment has not become accepted responsibility.",
+      "primary": {
+        "label": "Confirm accountable owner",
+        "target": "I08"
+      },
+      "secondary": {
+        "label": "Workload planning",
+        "target": "V02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V04",
+      "title": "Outstanding input and office coordination",
+      "role": "Supervisor",
+      "template": "queue",
+      "purpose": "Resolve stalled supporting tasks and maintain the lead owner.",
+      "primary": {
+        "label": "Open input task",
+        "target": "O06"
+      },
+      "secondary": {
+        "label": "Escalation register",
+        "target": "V05"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V05",
+      "title": "SLA intervention and extensions",
+      "role": "Supervisor",
+      "template": "sla",
+      "purpose": "Track governing deadlines, intervention and authorised exceptions.",
+      "primary": {
+        "label": "Request documented extension",
+        "target": "M05"
+      },
+      "secondary": {
+        "label": "Source policy configuration",
+        "target": "T05"
+      },
+      "fields": [
+        {
+          "label": "Intervention reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Required next action",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Responsible authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V06",
+      "title": "Competent-authority decision approval",
+      "role": "Supervisor",
+      "template": "approval",
+      "purpose": "Check findings, scope and delegated powers before authorising action.",
+      "primary": {
+        "label": "Approve decision",
+        "target": "O15"
+      },
+      "secondary": {
+        "label": "Return proposal",
+        "target": "O14"
+      },
+      "fields": [
+        {
+          "label": "Decision reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Authority / delegation",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Issue coverage",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Evidence adequacy",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Decision",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Approve",
+            "Return with reasons",
+            "Decline with reasons"
+          ]
+        },
+        {
+          "label": "Reasons and conditions",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Authority approval",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V07",
+      "title": "ATR quality review",
+      "role": "Supervisor",
+      "template": "quality",
+      "purpose": "Check the report against each issue, evidence and action result.",
+      "primary": {
+        "label": "Approve reviewed ATR",
+        "target": "V08"
+      },
+      "secondary": {
+        "label": "Return with corrections",
+        "target": "M07"
+      },
+      "fields": [
+        {
+          "label": "Reviewer conclusion",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Pass",
+            "Return for correction"
+          ]
+        },
+        {
+          "label": "Review comments",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Quality review",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V08",
+      "title": "Closure outcome approval",
+      "role": "Supervisor",
+      "template": "verification",
+      "purpose": "Record an accurate closure outcome without confusing it with satisfaction.",
+      "primary": {
+        "label": "Approve outcome and communicate",
+        "target": "O18"
+      },
+      "secondary": {
+        "label": "Return to verification",
+        "target": "O16"
+      },
+      "fields": [
+        {
+          "label": "Internal closure outcome",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Remedied and verified",
+            "Remedied; citizen unavailable",
+            "Reasoned decision",
+            "Referral verified",
+            "Partly remedied"
+          ]
+        },
+        {
+          "label": "Implementation evidence",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Citizen confirmation",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Confirmed",
+            "Disputed",
+            "Unavailable"
+          ]
+        },
+        {
+          "label": "Remaining obligations",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Approval reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actual outcome, authority and supporting evidence.",
+        "Source writeback needs its own acknowledged result."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Closure quality gate",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V09",
+      "title": "Legacy closure evidence review",
+      "role": "Supervisor",
+      "template": "comparison",
+      "purpose": "Assess closure triggers and evidence before deciding on further action.",
+      "primary": {
+        "label": "Create authorised local review",
+        "target": "R01"
+      },
+      "secondary": {
+        "label": "Legacy review queue",
+        "target": "I13"
+      },
+      "fields": [
+        {
+          "label": "Review determination",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Enrichment required",
+            "No further action justified",
+            "Authorised local review"
+          ]
+        },
+        {
+          "label": "Reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Legacy closure review",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "V10",
+      "title": "Preventive and corrective action programme",
+      "role": "Supervisor",
+      "template": "actions",
+      "purpose": "Track recurring causes and determine whether preventive work improved service.",
+      "primary": {
+        "label": "Review recurring-property evidence",
+        "target": "L04"
+      },
+      "secondary": {
+        "label": "Outcome quality dashboard",
+        "target": "L05"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "D01",
+      "title": "My authorised cases",
+      "role": "Developer",
+      "template": "dashboard",
+      "purpose": "Show only cases assigned to this respondent and the permitted response tasks.",
+      "primary": {
+        "label": "Open notice",
+        "target": "D02"
+      },
+      "secondary": {
+        "label": "Hearing calendar",
+        "target": "D05"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "D02",
+      "title": "Case allegation and served notice",
+      "role": "Developer",
+      "template": "detail",
+      "purpose": "Present the allegations and document requests fairly without restricted disclosures.",
+      "primary": {
+        "label": "Prepare response",
+        "target": "D03"
+      },
+      "secondary": {
+        "label": "My cases",
+        "target": "D01"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Respondent response requested",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "D03",
+      "title": "Respondent statement and evidence",
+      "role": "Developer",
+      "template": "form",
+      "purpose": "Capture a reasoned response linked to each allegation.",
+      "primary": {
+        "label": "Submit response",
+        "target": "O07"
+      },
+      "secondary": {
+        "label": "Payment ledger",
+        "target": "D04"
+      },
+      "fields": [
+        {
+          "label": "Case / notice",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Responding capacity",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Statement for each issue",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Supporting evidence",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Evidence explanation",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Representation authority",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Declaration",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Respondent statement draft",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "D04",
+      "title": "Transit-rent ledger and payment proof",
+      "role": "Developer",
+      "template": "ledger",
+      "purpose": "Show obligation, reported payment and verification as separate measures.",
+      "primary": {
+        "label": "Submit ledger evidence",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Respondent statement",
+        "target": "D03"
+      },
+      "fields": [
+        {
+          "label": "Period covered",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Agreement / order reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Transaction evidence",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Reconciliation explanation",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Payment evidence preparation",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "D05",
+      "title": "Hearing calendar and notice acknowledgement",
+      "role": "Developer",
+      "template": "calendar",
+      "purpose": "Support attendance, document preparation and notice acknowledgement.",
+      "primary": {
+        "label": "Open hearing record",
+        "target": "O12"
+      },
+      "secondary": {
+        "label": "Request rescheduling",
+        "target": "M08"
+      },
+      "fields": [
+        {
+          "label": "Notice reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Acknowledgement",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Participant / capacity",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Attendance needs",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Hearing scheduled",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "D06",
+      "title": "Decision directions and compliance",
+      "role": "Developer",
+      "template": "actions",
+      "purpose": "Track authorised directions and the evidence of implementation.",
+      "primary": {
+        "label": "Submit compliance evidence",
+        "target": "O16"
+      },
+      "secondary": {
+        "label": "Decision record",
+        "target": "C10"
+      },
+      "fields": [
+        {
+          "label": "Direction reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Compliance statement",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Implementation evidence",
+          "value": "",
+          "kind": "file",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Action compliance",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R01",
+      "title": "Independent review queue",
+      "role": "Review",
+      "template": "dashboard",
+      "purpose": "Receive challenges and assess them independently of the original handler.",
+      "primary": {
+        "label": "Check admissibility",
+        "target": "R02"
+      },
+      "secondary": {
+        "label": "Ordered action tracking",
+        "target": "R07"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R02",
+      "title": "Review admissibility and authority",
+      "role": "Review",
+      "template": "form",
+      "purpose": "Verify the mechanism, authority, filing grounds and applicable period.",
+      "primary": {
+        "label": "Begin independent evidence review",
+        "target": "R03"
+      },
+      "secondary": {
+        "label": "Request clarification",
+        "target": "R04"
+      },
+      "fields": [
+        {
+          "label": "Mechanism",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Reopening",
+            "Reconsideration",
+            "Prescribed appeal"
+          ]
+        },
+        {
+          "label": "Original decision",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Applicable procedure",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Competent review authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Filing period assessment",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Admissibility conclusion",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Admissible",
+            "Needs verification",
+            "Reasoned referral / other route"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Review admissibility",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R03",
+      "title": "Independent case and evidence assessment",
+      "role": "Review",
+      "template": "comparison",
+      "purpose": "Examine the original decision alongside the challenge and supporting material.",
+      "primary": {
+        "label": "Request or assess new material",
+        "target": "R04"
+      },
+      "secondary": {
+        "label": "Review hearing",
+        "target": "R05"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Independent assessment",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R04",
+      "title": "New material and review clarification",
+      "role": "Review",
+      "template": "form",
+      "purpose": "Ask precise questions and retain new evidence provenance.",
+      "primary": {
+        "label": "Continue review",
+        "target": "R03"
+      },
+      "secondary": {
+        "label": "Issue hearing notice",
+        "target": "R05"
+      },
+      "fields": [
+        {
+          "label": "Information requested",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Requested from",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Citizen",
+            "Original office",
+            "Supporting office",
+            "Respondent"
+          ]
+        },
+        {
+          "label": "Evidence / period",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Response milestone",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "New material received",
+          "value": "",
+          "kind": "file",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Assessment note",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Review evidence gathering",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R05",
+      "title": "Review hearing and submissions",
+      "role": "Review",
+      "template": "calendar",
+      "purpose": "Record the independent hearing, notice service and issue submissions.",
+      "primary": {
+        "label": "Prepare review decision",
+        "target": "R06"
+      },
+      "secondary": {
+        "label": "Review evidence",
+        "target": "R03"
+      },
+      "fields": [
+        {
+          "label": "Hearing reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Review date",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Participants",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Notice service",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Review submissions",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Follow-up directions",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Review hearing",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R06",
+      "title": "Reasoned review or appeal decision",
+      "role": "Review",
+      "template": "approval",
+      "purpose": "Issue an independent outcome and any specific corrective directions.",
+      "primary": {
+        "label": "Issue review decision",
+        "target": "R07"
+      },
+      "secondary": {
+        "label": "Original vs review comparison",
+        "target": "R08"
+      },
+      "fields": [
+        {
+          "label": "Review conclusion",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Confirm original outcome",
+            "Modify outcome",
+            "Direct further investigation",
+            "Order corrective action"
+          ]
+        },
+        {
+          "label": "Issue-level reasons",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Evidence relied upon",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Ordered action",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Competent authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Citizen communication",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Review decision",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R07",
+      "title": "Track review-ordered action",
+      "role": "Review",
+      "template": "actions",
+      "purpose": "Verify that a reviewed decision led to the ordered implementation.",
+      "primary": {
+        "label": "Compare final outcomes",
+        "target": "R08"
+      },
+      "secondary": {
+        "label": "Implementation evidence",
+        "target": "O16"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Review follow-up",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "R08",
+      "title": "Original and reviewed outcome comparison",
+      "role": "Review",
+      "template": "comparison",
+      "purpose": "Show what changed, why, and whether ordered actions completed.",
+      "primary": {
+        "label": "Communicate reviewed outcome",
+        "target": "C13"
+      },
+      "secondary": {
+        "label": "Ordered actions",
+        "target": "R07"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Review outcome record",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "L01",
+      "title": "MHADA grievance command centre",
+      "role": "Leadership",
+      "template": "dashboard",
+      "purpose": "Show source-backed volumes and the operational measures requiring enrichment.",
+      "primary": {
+        "label": "Compare boards",
+        "target": "L02"
+      },
+      "secondary": {
+        "label": "Outcome quality",
+        "target": "L05"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "Source cohort",
+        "Board",
+        "Category",
+        "Receipt period"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "L02",
+      "title": "Board and office comparison",
+      "role": "Leadership",
+      "template": "analytics",
+      "purpose": "Compare export populations without implying individual officer performance.",
+      "primary": {
+        "label": "Inspect a board queue",
+        "target": "V01"
+      },
+      "secondary": {
+        "label": "Workload planning",
+        "target": "V02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "L03",
+      "title": "Categories, sources and receipt cohorts",
+      "role": "Leadership",
+      "template": "analytics",
+      "purpose": "Show category counts and source coverage with the correct population.",
+      "primary": {
+        "label": "Open filtered intake records",
+        "target": "I01"
+      },
+      "secondary": {
+        "label": "Source reconciliation",
+        "target": "I05"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [
+        "Source",
+        "Received / due / completed",
+        "Period",
+        "Category"
+      ],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "L04",
+      "title": "Property clusters and recurring causes",
+      "role": "Leadership",
+      "template": "clusters",
+      "purpose": "Explore linked building or project issues while preserving individual cases.",
+      "primary": {
+        "label": "Open preventive action programme",
+        "target": "V10"
+      },
+      "secondary": {
+        "label": "Related-case review",
+        "target": "I09"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "L05",
+      "title": "Remedy quality and citizen outcomes",
+      "role": "Leadership",
+      "template": "analytics",
+      "purpose": "Distinguish administrative closure, implemented remedy and citizen experience.",
+      "primary": {
+        "label": "Inspect closure quality",
+        "target": "V08"
+      },
+      "secondary": {
+        "label": "Report builder",
+        "target": "L06"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "L06",
+      "title": "Reports and governed exports",
+      "role": "Leadership",
+      "template": "report",
+      "purpose": "Choose a defined cohort and export a reproducible report.",
+      "primary": {
+        "label": "Preview audit report pack",
+        "target": "A06"
+      },
+      "secondary": {
+        "label": "Command centre",
+        "target": "L01"
+      },
+      "fields": [
+        {
+          "label": "Report type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Operational review",
+            "Source reconciliation",
+            "Outcome quality",
+            "Board comparison"
+          ]
+        },
+        {
+          "label": "Cohort",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Received cases",
+            "Due cases",
+            "Completed cases"
+          ]
+        },
+        {
+          "label": "Period",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Board / office",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Source coverage",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Include personal details",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Masked / omitted",
+            "Authorised restricted export"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "A01",
+      "title": "Audit control overview",
+      "role": "Audit",
+      "template": "dashboard",
+      "purpose": "Prioritise traceability, evidence, migration and access checks.",
+      "primary": {
+        "label": "Inspect case history",
+        "target": "A02"
+      },
+      "secondary": {
+        "label": "Migration controls",
+        "target": "A04"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "A02",
+      "title": "Immutable case event history",
+      "role": "Audit",
+      "template": "timeline",
+      "purpose": "Reconstruct source changes, ownership and actions without overwriting history.",
+      "primary": {
+        "label": "Inspect decision evidence",
+        "target": "A03"
+      },
+      "secondary": {
+        "label": "Case overview",
+        "target": "O02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Read-only audit",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "A03",
+      "title": "Decision-to-evidence trace",
+      "role": "Audit",
+      "template": "evidence",
+      "purpose": "Check whether decisions and remedies are supported by the recorded evidence.",
+      "primary": {
+        "label": "Open original page",
+        "target": "O09"
+      },
+      "secondary": {
+        "label": "Reviewed comparison",
+        "target": "R08"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": true,
+      "stage": "Audit evidence assessment",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "A04",
+      "title": "Import lineage and reconciliation audit",
+      "role": "Audit",
+      "template": "comparison",
+      "purpose": "Trace a case back to its original file, row and import snapshot.",
+      "primary": {
+        "label": "Inspect import receipt",
+        "target": "I05"
+      },
+      "secondary": {
+        "label": "Validation exceptions",
+        "target": "I04"
+      },
+      "fields": [
+        {
+          "label": "Source file",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Original row",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Checksum",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Mapping version",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Import actor / receipt",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "A05",
+      "title": "Access and restricted-evidence audit",
+      "role": "Audit",
+      "template": "matrix",
+      "purpose": "Review permission checks and sensitive-case access history.",
+      "primary": {
+        "label": "Review permission configuration",
+        "target": "T03"
+      },
+      "secondary": {
+        "label": "Restricted-access pattern",
+        "target": "M10"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "A06",
+      "title": "Audit pack and evidence export",
+      "role": "Audit",
+      "template": "report",
+      "purpose": "Produce a controlled, reconstructable case pack with sources and versions.",
+      "primary": {
+        "label": "Review export summary",
+        "target": "L06"
+      },
+      "secondary": {
+        "label": "Audit overview",
+        "target": "A01"
+      },
+      "fields": [
+        {
+          "label": "Case / review scope",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Include",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Decisions, evidence index, events",
+            "Full authorised case pack"
+          ]
+        },
+        {
+          "label": "Personal details",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Masked",
+            "Authorised restricted copy"
+          ]
+        },
+        {
+          "label": "Document versions",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Export purpose",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T01",
+      "title": "Organisation and jurisdiction directory",
+      "role": "Admin",
+      "template": "tree",
+      "purpose": "Maintain authority, boards, departments, offices and jurisdiction.",
+      "primary": {
+        "label": "Manage officer assignments",
+        "target": "T02"
+      },
+      "secondary": {
+        "label": "Routing rules",
+        "target": "T04"
+      },
+      "fields": [
+        {
+          "label": "Authority",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Board",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Department / zone",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Office / designation",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Jurisdiction",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Effective period",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T02",
+      "title": "Officers, substitutes and delegation",
+      "role": "Admin",
+      "template": "form",
+      "purpose": "Maintain current designation holders and delegated powers.",
+      "primary": {
+        "label": "Save effective assignment",
+        "target": "V02"
+      },
+      "secondary": {
+        "label": "Unaccepted assignments",
+        "target": "V03"
+      },
+      "fields": [
+        {
+          "label": "Designation",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Current officer",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Effective from",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Effective until",
+          "value": "",
+          "kind": "date",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Substitute",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Delegated authority",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Transfer handling",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Reassign active tasks with history",
+            "Supervisory review required"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T03",
+      "title": "Role and case-access permissions",
+      "role": "Admin",
+      "template": "matrix",
+      "purpose": "Configure authorised actions and case-level visibility.",
+      "primary": {
+        "label": "Review access audit",
+        "target": "A05"
+      },
+      "secondary": {
+        "label": "Organisation directory",
+        "target": "T01"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T04",
+      "title": "Category and routing rule book",
+      "role": "Admin",
+      "template": "routing",
+      "purpose": "Version the controlled taxonomy and rule-to-office mappings.",
+      "primary": {
+        "label": "Preview a routing result",
+        "target": "I08"
+      },
+      "secondary": {
+        "label": "Classification screen",
+        "target": "I07"
+      },
+      "fields": [
+        {
+          "label": "Category",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Subcategory",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Applicable board / scope",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Lead designation",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Supporting function",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Conflict route",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Rule version",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Approval state",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Draft - review required",
+            "Approved effective"
+          ]
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T05",
+      "title": "SLA policy and clock configuration",
+      "role": "Admin",
+      "template": "sla",
+      "purpose": "Configure approved source-specific clocks and exceptions.",
+      "primary": {
+        "label": "Review holiday calendar",
+        "target": "T06"
+      },
+      "secondary": {
+        "label": "Intervention workspace",
+        "target": "V05"
+      },
+      "fields": [
+        {
+          "label": "Source / procedure",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Aaple Sarkar",
+            "PG Portal",
+            "Specialised procedure"
+          ]
+        },
+        {
+          "label": "Policy reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Day-count convention",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Working calendar",
+            "Other approved convention"
+          ]
+        },
+        {
+          "label": "Clock start",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Original receipt",
+            "Prescribed event"
+          ]
+        },
+        {
+          "label": "Duration",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Calendar",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Extension / pause authority",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Version / effective date",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Activate only an approved applicable policy and calendar.",
+        "Keep original and revised deadlines plus exception reasons."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T06",
+      "title": "Working calendars and holidays",
+      "role": "Admin",
+      "template": "calendar",
+      "purpose": "Maintain the calendar used by the approved deadline policy.",
+      "primary": {
+        "label": "Save reviewed calendar",
+        "target": "T05"
+      },
+      "secondary": {
+        "label": "SLA policy",
+        "target": "T05"
+      },
+      "fields": [
+        {
+          "label": "Calendar name",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Working days",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Holiday date",
+          "value": "",
+          "kind": "date",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Holiday reason",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Effective year",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Approval reference",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T07",
+      "title": "Closure, outcome and review policies",
+      "role": "Admin",
+      "template": "policy",
+      "purpose": "Separate source closure rules from internal outcome and challenge procedures.",
+      "primary": {
+        "label": "Review legacy closure workflow",
+        "target": "V09"
+      },
+      "secondary": {
+        "label": "Closure approval",
+        "target": "V08"
+      },
+      "fields": [
+        {
+          "label": "Policy version",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Non-response handling",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Reopening / review authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T08",
+      "title": "Source integrations and synchronisation",
+      "role": "Admin",
+      "template": "integrations",
+      "purpose": "Show connector availability and synchronisation states transparently.",
+      "primary": {
+        "label": "Inspect exceptions",
+        "target": "T09"
+      },
+      "secondary": {
+        "label": "Import alternative",
+        "target": "I02"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T09",
+      "title": "Retries, conflicts and failed updates",
+      "role": "Admin",
+      "template": "queue",
+      "purpose": "Recover failed technical operations without duplicate case or remedy actions.",
+      "primary": {
+        "label": "Review selected exception",
+        "target": "I05"
+      },
+      "secondary": {
+        "label": "Integration status",
+        "target": "T08"
+      },
+      "fields": [],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T10",
+      "title": "Communication templates and language",
+      "role": "Admin",
+      "template": "communication",
+      "purpose": "Maintain approved multilingual templates and safe content rules.",
+      "primary": {
+        "label": "Preview citizen communication",
+        "target": "O18"
+      },
+      "secondary": {
+        "label": "Delivery retry pattern",
+        "target": "M11"
+      },
+      "fields": [
+        {
+          "label": "Template type",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Acknowledgement",
+            "Progress",
+            "Clarification",
+            "Decision",
+            "Hearing"
+          ]
+        },
+        {
+          "label": "Language",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "English",
+            "Marathi",
+            "Hindi"
+          ]
+        },
+        {
+          "label": "Channel",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Email",
+            "SMS reference",
+            "Assisted script"
+          ]
+        },
+        {
+          "label": "Template text",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Version / approval",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T11",
+      "title": "Evidence retention and document access",
+      "role": "Admin",
+      "template": "evidence",
+      "purpose": "Configure approved preservation, versions, access and retention.",
+      "primary": {
+        "label": "Inspect access audit",
+        "target": "A05"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "fields": [
+        {
+          "label": "Evidence classification",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Normal",
+            "Restricted"
+          ]
+        },
+        {
+          "label": "Original preservation",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Version policy",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Retention rule",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Hold / proceeding flag",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Download / export scope",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Deletion approval",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T12",
+      "title": "Service configuration and accessible intake",
+      "role": "Admin",
+      "template": "settings",
+      "purpose": "Configure available channels, assistance and language presentation.",
+      "primary": {
+        "label": "Preview citizen service home",
+        "target": "C01"
+      },
+      "secondary": {
+        "label": "Profile preferences",
+        "target": "S06"
+      },
+      "fields": [
+        {
+          "label": "Supported languages",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Assisted channels",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Acknowledgement channel",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Accessibility presentation",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Voice assistance",
+          "value": "",
+          "kind": "select",
+          "required": false,
+          "options": [
+            "Optional approved capability",
+            "Not enabled"
+          ]
+        },
+        {
+          "label": "Citizen help text",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "T13",
+      "title": "AI assistance and controlled knowledge",
+      "role": "Admin",
+      "template": "policy",
+      "purpose": "Set human review, source controls and evaluation requirements for assistance.",
+      "primary": {
+        "label": "Preview officer assistance",
+        "target": "O19"
+      },
+      "secondary": {
+        "label": "Policy version register",
+        "target": "T04"
+      },
+      "fields": [
+        {
+          "label": "Allowed assistance",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Translation, extraction, draft support",
+            "Policy retrieval",
+            "Disabled"
+          ]
+        },
+        {
+          "label": "Controlled sources",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Human review",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Uncertain output handling",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Evaluation sample",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Prohibited autonomous actions",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Record actor, time and reasons for material changes.",
+        "Keep original source references and history."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft."
+    },
+    {
+      "id": "M01",
+      "title": "Confirm grievance submission",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Create one durable reference only after successful storage.",
+      "primary": {
+        "label": "Submit grievance",
+        "target": "C07"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "C06"
+      },
+      "fields": [
+        {
+          "label": "Citizen confirmation",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Submission channel",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Create one durable reference only after successful storage.",
+        "A technical retry must not create a duplicate."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "C06"
+    },
+    {
+      "id": "M02",
+      "title": "Add a new evidence version",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Preserve the original file and its provenance.",
+      "primary": {
+        "label": "Save new version",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O08"
+      },
+      "fields": [
+        {
+          "label": "Evidence reference",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "New file",
+          "value": "",
+          "kind": "file",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Version reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Preserve the original file and its provenance.",
+        "Record who supplied this version and when."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "O08"
+    },
+    {
+      "id": "M03",
+      "title": "Confirm related-case link",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Do not delete either source record.",
+      "primary": {
+        "label": "Create reviewed link",
+        "target": "I07"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "I09"
+      },
+      "fields": [
+        {
+          "label": "Relationship",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Same incident",
+            "Reminder",
+            "Shared investigation",
+            "Recurrence"
+          ]
+        },
+        {
+          "label": "Reason and evidence",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Do not delete either source record.",
+        "Retain individual remedies and deadlines."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "I09"
+    },
+    {
+      "id": "M04",
+      "title": "Decline or redirect assignment",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Ownership remains unresolved until another owner accepts.",
+      "primary": {
+        "label": "Send to supervisor",
+        "target": "V03"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O04"
+      },
+      "fields": [
+        {
+          "label": "Reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Suggested responsible office",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Ownership remains unresolved until another owner accepts.",
+        "Keep original receipt and deadline."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "O04"
+    },
+    {
+      "id": "M05",
+      "title": "Request an authorised deadline exception",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Preserve original and revised deadline.",
+      "primary": {
+        "label": "Send for approval",
+        "target": "V05"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "V05"
+      },
+      "fields": [
+        {
+          "label": "Exception reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Proposed milestone",
+          "value": "",
+          "kind": "date",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Approving authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Preserve original and revised deadline.",
+        "Record the applicable exception rule and citizen update."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "V05"
+    },
+    {
+      "id": "M06",
+      "title": "Create a restricted referral",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Restrict sensitive allegations and identifying material.",
+      "primary": {
+        "label": "Send restricted referral",
+        "target": "I11"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "I10"
+      },
+      "fields": [
+        {
+          "label": "Competent receiving authority",
+          "value": "",
+          "kind": "text",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Safe contact handling",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Referral basis",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Restrict sensitive allegations and identifying material.",
+        "Urgent response may run alongside investigation."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "I10"
+    },
+    {
+      "id": "M07",
+      "title": "Return ATR for correction",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Preserve the earlier ATR and review record.",
+      "primary": {
+        "label": "Return with specific corrections",
+        "target": "O17"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "V07"
+      },
+      "fields": [
+        {
+          "label": "Defect category",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Incomplete remedy evidence",
+            "Missing issue",
+            "Unsupported finding",
+            "Incorrect route"
+          ]
+        },
+        {
+          "label": "Required corrections",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Preserve the earlier ATR and review record.",
+        "Set a clear owner and next milestone."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "V07"
+    },
+    {
+      "id": "M08",
+      "title": "Request hearing rescheduling",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Keep the original appointment and notice service history.",
+      "primary": {
+        "label": "Record reschedule request",
+        "target": "O11"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O11"
+      },
+      "fields": [
+        {
+          "label": "Reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Proposed date",
+          "value": "",
+          "kind": "date",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Notice recipients",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Keep the original appointment and notice service history.",
+        "Follow the applicable authorised procedure."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "O11"
+    },
+    {
+      "id": "M09",
+      "title": "Confirm the challenge mechanism",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "An internal review is not automatically a CPGRAMS appeal.",
+      "primary": {
+        "label": "Submit linked challenge",
+        "target": "C13"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "C12"
+      },
+      "fields": [
+        {
+          "label": "Mechanism",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Reopening",
+            "Reconsideration",
+            "Prescribed appeal"
+          ]
+        },
+        {
+          "label": "Grounds reviewed",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "An internal review is not automatically a CPGRAMS appeal.",
+        "Preserve original decision and source references."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "C12"
+    },
+    {
+      "id": "M10",
+      "title": "Restricted document access",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "No restricted document content is disclosed in this state.",
+      "primary": {
+        "label": "Return to permitted evidence",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O09"
+      },
+      "fields": [
+        {
+          "label": "Access result",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Request purpose",
+          "value": "",
+          "kind": "long",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "No restricted document content is disclosed in this state.",
+        "An access request follows the approved case-level policy."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "O09"
+    },
+    {
+      "id": "M11",
+      "title": "Retry failed communication",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "Keep the earlier failed-delivery event.",
+      "primary": {
+        "label": "Record permitted retry",
+        "target": "O18"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O18"
+      },
+      "fields": [
+        {
+          "label": "Failed channel",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        },
+        {
+          "label": "Alternative approved channel",
+          "value": "",
+          "kind": "select",
+          "required": true,
+          "options": [
+            "Retry approved email",
+            "SMS reference",
+            "Assisted contact"
+          ]
+        },
+        {
+          "label": "Retry reason",
+          "value": "",
+          "kind": "long",
+          "required": true,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "Keep the earlier failed-delivery event.",
+        "Do not describe an attempt as confirmed delivery."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "O18"
+    },
+    {
+      "id": "M12",
+      "title": "Commit reconciled import batch",
+      "role": "Shared",
+      "template": "modal",
+      "purpose": "1,935 source records must reconcile for the supplied baseline.",
+      "primary": {
+        "label": "Commit and issue receipt",
+        "target": "I01"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "I05"
+      },
+      "fields": [
+        {
+          "label": "Reconciliation checked",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Original preserved",
+          "value": "",
+          "kind": "check",
+          "required": true,
+          "options": []
+        },
+        {
+          "label": "Batch purpose",
+          "value": "",
+          "kind": "text",
+          "required": false,
+          "options": []
+        }
+      ],
+      "panels": [],
+      "tabs": [],
+      "rules": [
+        "1,935 source records must reconcile for the supplied baseline.",
+        "Record accepted, updated, unchanged and rejected rows."
+      ],
+      "filters": [],
+      "case": false,
+      "stage": "",
+      "empty": "No records match this view. Adjust the filters or start the relevant task.",
+      "error": "This workspace could not load. Retry without losing the current draft.",
+      "parent": "I05"
+    }
+  ]
+}

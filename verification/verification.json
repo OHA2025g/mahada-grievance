@@ -1,0 +1,9 @@
+{
+  "checks": 184,
+  "baseline": 1935,
+  "total_cases": 1937,
+  "original_files": 2,
+  "workflow": "Registration to verified closure and linked review",
+  "browser_qa": "Not available in managed build environment",
+  "passed": true
+}

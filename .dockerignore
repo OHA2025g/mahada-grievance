@@ -1,0 +1,14 @@
+node_modules
+.wrangler
+dist
+.next
+.vinext
+.sites-runtime
+.git
+.DS_Store
+**/.DS_Store
+*.log
+outputs
+work
+.agents
+.codex

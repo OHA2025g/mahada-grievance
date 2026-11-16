@@ -1,0 +1,8 @@
+{
+  "dry_run_passed": true,
+  "encryption_roundtrip_passed": true,
+  "records": 1935,
+  "original_source_files": 2,
+  "live_credentials_used": false,
+  "browser_testing": false
+}

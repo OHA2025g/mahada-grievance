@@ -1,0 +1,1926 @@
+{
+  "design_version": "2.0",
+  "screens": [
+    {
+      "id": "S01",
+      "title": "Choose your workspace",
+      "role": "Shared",
+      "template": "access",
+      "path": "/workspace/S01?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Continue to sign in",
+        "target": "S02"
+      },
+      "secondary": {
+        "label": "Open citizen home",
+        "target": "C01"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "S02",
+      "title": "Sign in and verify contact",
+      "role": "Shared",
+      "template": "auth",
+      "path": "/workspace/S02?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Verify and continue",
+        "target": "C02"
+      },
+      "secondary": {
+        "label": "Change workspace",
+        "target": "S01"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "S03",
+      "title": "Session expired - resume safely",
+      "role": "Shared",
+      "template": "message",
+      "path": "/workspace/S03?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Sign in again",
+        "target": "S02"
+      },
+      "secondary": {
+        "label": "Return to access",
+        "target": "S01"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "S04",
+      "title": "Notifications and reminders",
+      "role": "Shared",
+      "template": "queue",
+      "path": "/workspace/S04?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Open selected notification",
+        "target": "O06"
+      },
+      "secondary": {
+        "label": "Notification preferences",
+        "target": "S06"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "S05",
+      "title": "Search cases, properties and evidence",
+      "role": "Shared",
+      "template": "search",
+      "path": "/workspace/S05?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Open selected result",
+        "target": "O02"
+      },
+      "secondary": {
+        "label": "Back to workspace",
+        "target": "S01"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "S06",
+      "title": "Profile and accessibility preferences",
+      "role": "Shared",
+      "template": "form",
+      "path": "/workspace/S06?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Save preferences",
+        "target": "S04"
+      },
+      "secondary": {
+        "label": "Back to workspace",
+        "target": "S01"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "C01",
+      "title": "Citizen service home",
+      "role": "Citizen",
+      "template": "public",
+      "path": "/workspace/C01?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Register a grievance",
+        "target": "C03"
+      },
+      "secondary": {
+        "label": "Track a grievance",
+        "target": "C08"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "C02",
+      "title": "My grievances",
+      "role": "Citizen",
+      "template": "dashboard",
+      "path": "/workspace/C02?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "New grievance",
+        "target": "C03"
+      },
+      "secondary": {
+        "label": "My appointments",
+        "target": "C14"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "C03",
+      "title": "New grievance - describe the issue",
+      "role": "Citizen",
+      "template": "wizard",
+      "path": "/workspace/C03?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Continue to references",
+        "target": "C04"
+      },
+      "secondary": {
+        "label": "Save draft and return",
+        "target": "C02"
+      },
+      "field_count": 11
+    },
+    {
+      "id": "C04",
+      "title": "New grievance - service and property",
+      "role": "Citizen",
+      "template": "wizard",
+      "path": "/workspace/C04?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Continue to evidence",
+        "target": "C05"
+      },
+      "secondary": {
+        "label": "Back to description",
+        "target": "C03"
+      },
+      "field_count": 11
+    },
+    {
+      "id": "C05",
+      "title": "New grievance - supporting evidence",
+      "role": "Citizen",
+      "template": "upload",
+      "path": "/workspace/C05?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Review submission",
+        "target": "C06"
+      },
+      "secondary": {
+        "label": "Back to references",
+        "target": "C04"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "C06",
+      "title": "New grievance - review and submit",
+      "role": "Citizen",
+      "template": "review",
+      "path": "/workspace/C06?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Submit grievance",
+        "target": "M01"
+      },
+      "secondary": {
+        "label": "Edit evidence",
+        "target": "C05"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "C07",
+      "title": "Grievance registered",
+      "role": "Citizen",
+      "template": "message",
+      "path": "/workspace/C07?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Track my case",
+        "target": "C08"
+      },
+      "secondary": {
+        "label": "My grievances",
+        "target": "C02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "C08",
+      "title": "Track grievance and timeline",
+      "role": "Citizen",
+      "template": "timeline",
+      "path": "/workspace/C08?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Respond to clarification",
+        "target": "C09"
+      },
+      "secondary": {
+        "label": "View decision",
+        "target": "C10"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "C09",
+      "title": "Provide clarification or documents",
+      "role": "Citizen",
+      "template": "form",
+      "path": "/workspace/C09?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Send clarification",
+        "target": "C08"
+      },
+      "secondary": {
+        "label": "Return to tracking",
+        "target": "C08"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "C10",
+      "title": "Decision and action taken report",
+      "role": "Citizen",
+      "template": "document",
+      "path": "/workspace/C10?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Give outcome feedback",
+        "target": "C11"
+      },
+      "secondary": {
+        "label": "Request review",
+        "target": "C12"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "C11",
+      "title": "Confirm remedy and give feedback",
+      "role": "Citizen",
+      "template": "form",
+      "path": "/workspace/C11?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Submit feedback",
+        "target": "C08"
+      },
+      "secondary": {
+        "label": "Request review",
+        "target": "C12"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "C12",
+      "title": "Request review or appeal",
+      "role": "Citizen",
+      "template": "wizard",
+      "path": "/workspace/C12?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Review request details",
+        "target": "M09"
+      },
+      "secondary": {
+        "label": "Back to decision",
+        "target": "C10"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "C13",
+      "title": "Track review and appeal",
+      "role": "Citizen",
+      "template": "timeline",
+      "path": "/workspace/C13?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "View review outcome",
+        "target": "R08"
+      },
+      "secondary": {
+        "label": "My grievances",
+        "target": "C02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "C14",
+      "title": "Appointments and hearings",
+      "role": "Citizen",
+      "template": "calendar",
+      "path": "/workspace/C14?workspace=Citizen",
+      "parent": null,
+      "primary": {
+        "label": "Open hearing notice",
+        "target": "O11"
+      },
+      "secondary": {
+        "label": "Track case",
+        "target": "C08"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "I01",
+      "title": "Intake control desk",
+      "role": "Intake",
+      "template": "dashboard",
+      "path": "/workspace/I01?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Import source export",
+        "target": "I02"
+      },
+      "secondary": {
+        "label": "Urgent triage",
+        "target": "I10"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "I02",
+      "title": "Import a source export",
+      "role": "Intake",
+      "template": "upload",
+      "path": "/workspace/I02?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Map columns",
+        "target": "I03"
+      },
+      "secondary": {
+        "label": "Intake desk",
+        "target": "I01"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "I03",
+      "title": "Map source columns",
+      "role": "Intake",
+      "template": "mapping",
+      "path": "/workspace/I03?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Validate mapped rows",
+        "target": "I04"
+      },
+      "secondary": {
+        "label": "Change source file",
+        "target": "I02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "I04",
+      "title": "Validate rows and resolve exceptions",
+      "role": "Intake",
+      "template": "queue",
+      "path": "/workspace/I04?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Review reconciliation",
+        "target": "I05"
+      },
+      "secondary": {
+        "label": "Mapping",
+        "target": "I03"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "I05",
+      "title": "Reconcile and commit import",
+      "role": "Intake",
+      "template": "comparison",
+      "path": "/workspace/I05?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Commit reconciled batch",
+        "target": "M12"
+      },
+      "secondary": {
+        "label": "Resolve exceptions",
+        "target": "I04"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "I06",
+      "title": "Retrieve complete case records",
+      "role": "Intake",
+      "template": "detail",
+      "path": "/workspace/I06?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Classify enriched case",
+        "target": "I07"
+      },
+      "secondary": {
+        "label": "Triage with limitations",
+        "target": "I07"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "I07",
+      "title": "Classify issues and prioritise",
+      "role": "Intake",
+      "template": "form",
+      "path": "/workspace/I07?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Confirm jurisdiction",
+        "target": "I08"
+      },
+      "secondary": {
+        "label": "Related-case check",
+        "target": "I09"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "I08",
+      "title": "Jurisdiction and assignment routing",
+      "role": "Intake",
+      "template": "routing",
+      "path": "/workspace/I08?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Send assignment",
+        "target": "O04"
+      },
+      "secondary": {
+        "label": "External referral",
+        "target": "I11"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "I09",
+      "title": "Review related records and reminders",
+      "role": "Intake",
+      "template": "comparison",
+      "path": "/workspace/I09?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Confirm a reviewed link",
+        "target": "M03"
+      },
+      "secondary": {
+        "label": "Continue triage",
+        "target": "I07"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "I10",
+      "title": "Urgent and restricted-case triage",
+      "role": "Intake",
+      "template": "form",
+      "path": "/workspace/I10?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Create restricted referral",
+        "target": "M06"
+      },
+      "secondary": {
+        "label": "Monitor escalation",
+        "target": "V05"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "I11",
+      "title": "Transfer and handoff verification",
+      "role": "Intake",
+      "template": "queue",
+      "path": "/workspace/I11?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Record receiving acceptance",
+        "target": "V05"
+      },
+      "secondary": {
+        "label": "Routing desk",
+        "target": "I08"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "I12",
+      "title": "Assisted telephone and counter intake",
+      "role": "Intake",
+      "template": "form",
+      "path": "/workspace/I12?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Review assisted submission",
+        "target": "C06"
+      },
+      "secondary": {
+        "label": "Intake desk",
+        "target": "I01"
+      },
+      "field_count": 10
+    },
+    {
+      "id": "I13",
+      "title": "Legacy closure review queue",
+      "role": "Intake",
+      "template": "queue",
+      "path": "/workspace/I13?workspace=Intake",
+      "parent": null,
+      "primary": {
+        "label": "Open closure evidence review",
+        "target": "V09"
+      },
+      "secondary": {
+        "label": "Audit lineage",
+        "target": "A04"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "O01",
+      "title": "My work and next actions",
+      "role": "Officer",
+      "template": "dashboard",
+      "path": "/workspace/O01?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Open a case",
+        "target": "O02"
+      },
+      "secondary": {
+        "label": "Accept assignment",
+        "target": "O04"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "O02",
+      "title": "Case overview and source record",
+      "role": "Officer",
+      "template": "detail",
+      "path": "/workspace/O02?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Review issue breakdown",
+        "target": "O03"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "O03",
+      "title": "Issues and requested remedies",
+      "role": "Officer",
+      "template": "issues",
+      "path": "/workspace/O03?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Create investigation plan",
+        "target": "O05"
+      },
+      "secondary": {
+        "label": "Case overview",
+        "target": "O02"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "O04",
+      "title": "Accept, reassign or decline ownership",
+      "role": "Officer",
+      "template": "approval",
+      "path": "/workspace/O04?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Accept assignment",
+        "target": "O02"
+      },
+      "secondary": {
+        "label": "Decline with reason",
+        "target": "M04"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "O05",
+      "title": "Investigation plan",
+      "role": "Officer",
+      "template": "form",
+      "path": "/workspace/O05?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Request supporting input",
+        "target": "O06"
+      },
+      "secondary": {
+        "label": "Field inspection",
+        "target": "O10"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "O06",
+      "title": "Request input from another office",
+      "role": "Officer",
+      "template": "form",
+      "path": "/workspace/O06?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Issue input task",
+        "target": "O07"
+      },
+      "secondary": {
+        "label": "Input-delay intervention",
+        "target": "V04"
+      },
+      "field_count": 7
+    },
+    {
+      "id": "O07",
+      "title": "Assess received input",
+      "role": "Officer",
+      "template": "comparison",
+      "path": "/workspace/O07?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Accept input and continue",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Return specific request",
+        "target": "O06"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "O08",
+      "title": "Evidence catalogue and provenance",
+      "role": "Officer",
+      "template": "evidence",
+      "path": "/workspace/O08?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Open evidence page",
+        "target": "O09"
+      },
+      "secondary": {
+        "label": "Replace with new version",
+        "target": "M02"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "O09",
+      "title": "Document viewer and cited facts",
+      "role": "Officer",
+      "template": "document",
+      "path": "/workspace/O09?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Return to evidence",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Restricted-access state",
+        "target": "M10"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "O10",
+      "title": "Field inspection record",
+      "role": "Officer",
+      "template": "inspection",
+      "path": "/workspace/O10?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Save field report",
+        "target": "O13"
+      },
+      "secondary": {
+        "label": "Investigation plan",
+        "target": "O05"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "O11",
+      "title": "Issue hearing notice",
+      "role": "Officer",
+      "template": "calendar",
+      "path": "/workspace/O11?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Issue hearing notice",
+        "target": "D05"
+      },
+      "secondary": {
+        "label": "Reschedule hearing",
+        "target": "M08"
+      },
+      "field_count": 9
+    },
+    {
+      "id": "O12",
+      "title": "Hearing minutes and directions",
+      "role": "Officer",
+      "template": "form",
+      "path": "/workspace/O12?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Record findings",
+        "target": "O13"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "field_count": 7
+    },
+    {
+      "id": "O13",
+      "title": "Issue findings and root cause",
+      "role": "Officer",
+      "template": "findings",
+      "path": "/workspace/O13?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Propose decision and remedy",
+        "target": "O14"
+      },
+      "secondary": {
+        "label": "Get more input",
+        "target": "O06"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "O14",
+      "title": "Decision and remedy proposal",
+      "role": "Officer",
+      "template": "approval",
+      "path": "/workspace/O14?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Send for approval",
+        "target": "V06"
+      },
+      "secondary": {
+        "label": "Findings",
+        "target": "O13"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "O15",
+      "title": "Execute approved remedy actions",
+      "role": "Officer",
+      "template": "actions",
+      "path": "/workspace/O15?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Verify completed action",
+        "target": "O16"
+      },
+      "secondary": {
+        "label": "Integration exception",
+        "target": "T09"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "O16",
+      "title": "Verify remedy implementation",
+      "role": "Officer",
+      "template": "verification",
+      "path": "/workspace/O16?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Prepare action taken report",
+        "target": "O17"
+      },
+      "secondary": {
+        "label": "Return to action execution",
+        "target": "O15"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "O17",
+      "title": "Draft action taken report",
+      "role": "Officer",
+      "template": "document",
+      "path": "/workspace/O17?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Send ATR for quality review",
+        "target": "V07"
+      },
+      "secondary": {
+        "label": "Verification record",
+        "target": "O16"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "O18",
+      "title": "Communicate decision and updates",
+      "role": "Officer",
+      "template": "communication",
+      "path": "/workspace/O18?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Send approved communication",
+        "target": "C10"
+      },
+      "secondary": {
+        "label": "Retry failed message",
+        "target": "M11"
+      },
+      "field_count": 7
+    },
+    {
+      "id": "O19",
+      "title": "Policy lookup and officer assistance",
+      "role": "Officer",
+      "template": "search",
+      "path": "/workspace/O19?workspace=Officer",
+      "parent": null,
+      "primary": {
+        "label": "Use cited policy in proposal",
+        "target": "O14"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "V01",
+      "title": "Board operations dashboard",
+      "role": "Supervisor",
+      "template": "dashboard",
+      "path": "/workspace/V01?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Review workload",
+        "target": "V02"
+      },
+      "secondary": {
+        "label": "Quality-review queue",
+        "target": "V07"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "V02",
+      "title": "Workload and assignment planning",
+      "role": "Supervisor",
+      "template": "workload",
+      "path": "/workspace/V02?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Resolve unaccepted work",
+        "target": "V03"
+      },
+      "secondary": {
+        "label": "Officer delegation",
+        "target": "T02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "V03",
+      "title": "Unaccepted assignments and ownership gaps",
+      "role": "Supervisor",
+      "template": "queue",
+      "path": "/workspace/V03?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Confirm accountable owner",
+        "target": "I08"
+      },
+      "secondary": {
+        "label": "Workload planning",
+        "target": "V02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "V04",
+      "title": "Outstanding input and office coordination",
+      "role": "Supervisor",
+      "template": "queue",
+      "path": "/workspace/V04?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Open input task",
+        "target": "O06"
+      },
+      "secondary": {
+        "label": "Escalation register",
+        "target": "V05"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "V05",
+      "title": "SLA intervention and extensions",
+      "role": "Supervisor",
+      "template": "sla",
+      "path": "/workspace/V05?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Request documented extension",
+        "target": "M05"
+      },
+      "secondary": {
+        "label": "Source policy configuration",
+        "target": "T05"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "V06",
+      "title": "Competent-authority decision approval",
+      "role": "Supervisor",
+      "template": "approval",
+      "path": "/workspace/V06?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Approve decision",
+        "target": "O15"
+      },
+      "secondary": {
+        "label": "Return proposal",
+        "target": "O14"
+      },
+      "field_count": 7
+    },
+    {
+      "id": "V07",
+      "title": "ATR quality review",
+      "role": "Supervisor",
+      "template": "quality",
+      "path": "/workspace/V07?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Approve reviewed ATR",
+        "target": "V08"
+      },
+      "secondary": {
+        "label": "Return with corrections",
+        "target": "M07"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "V08",
+      "title": "Closure outcome approval",
+      "role": "Supervisor",
+      "template": "verification",
+      "path": "/workspace/V08?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Approve outcome and communicate",
+        "target": "O18"
+      },
+      "secondary": {
+        "label": "Return to verification",
+        "target": "O16"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "V09",
+      "title": "Legacy closure evidence review",
+      "role": "Supervisor",
+      "template": "comparison",
+      "path": "/workspace/V09?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Create authorised local review",
+        "target": "R01"
+      },
+      "secondary": {
+        "label": "Legacy review queue",
+        "target": "I13"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "V10",
+      "title": "Preventive and corrective action programme",
+      "role": "Supervisor",
+      "template": "actions",
+      "path": "/workspace/V10?workspace=Supervisor",
+      "parent": null,
+      "primary": {
+        "label": "Review recurring-property evidence",
+        "target": "L04"
+      },
+      "secondary": {
+        "label": "Outcome quality dashboard",
+        "target": "L05"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "D01",
+      "title": "My authorised cases",
+      "role": "Developer",
+      "template": "dashboard",
+      "path": "/workspace/D01?workspace=Developer",
+      "parent": null,
+      "primary": {
+        "label": "Open notice",
+        "target": "D02"
+      },
+      "secondary": {
+        "label": "Hearing calendar",
+        "target": "D05"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "D02",
+      "title": "Case allegation and served notice",
+      "role": "Developer",
+      "template": "detail",
+      "path": "/workspace/D02?workspace=Developer",
+      "parent": null,
+      "primary": {
+        "label": "Prepare response",
+        "target": "D03"
+      },
+      "secondary": {
+        "label": "My cases",
+        "target": "D01"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "D03",
+      "title": "Respondent statement and evidence",
+      "role": "Developer",
+      "template": "form",
+      "path": "/workspace/D03?workspace=Developer",
+      "parent": null,
+      "primary": {
+        "label": "Submit response",
+        "target": "O07"
+      },
+      "secondary": {
+        "label": "Payment ledger",
+        "target": "D04"
+      },
+      "field_count": 7
+    },
+    {
+      "id": "D04",
+      "title": "Transit-rent ledger and payment proof",
+      "role": "Developer",
+      "template": "ledger",
+      "path": "/workspace/D04?workspace=Developer",
+      "parent": null,
+      "primary": {
+        "label": "Submit ledger evidence",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Respondent statement",
+        "target": "D03"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "D05",
+      "title": "Hearing calendar and notice acknowledgement",
+      "role": "Developer",
+      "template": "calendar",
+      "path": "/workspace/D05?workspace=Developer",
+      "parent": null,
+      "primary": {
+        "label": "Open hearing record",
+        "target": "O12"
+      },
+      "secondary": {
+        "label": "Request rescheduling",
+        "target": "M08"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "D06",
+      "title": "Decision directions and compliance",
+      "role": "Developer",
+      "template": "actions",
+      "path": "/workspace/D06?workspace=Developer",
+      "parent": null,
+      "primary": {
+        "label": "Submit compliance evidence",
+        "target": "O16"
+      },
+      "secondary": {
+        "label": "Decision record",
+        "target": "C10"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "R01",
+      "title": "Independent review queue",
+      "role": "Review",
+      "template": "dashboard",
+      "path": "/workspace/R01?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Check admissibility",
+        "target": "R02"
+      },
+      "secondary": {
+        "label": "Ordered action tracking",
+        "target": "R07"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "R02",
+      "title": "Review admissibility and authority",
+      "role": "Review",
+      "template": "form",
+      "path": "/workspace/R02?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Begin independent evidence review",
+        "target": "R03"
+      },
+      "secondary": {
+        "label": "Request clarification",
+        "target": "R04"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "R03",
+      "title": "Independent case and evidence assessment",
+      "role": "Review",
+      "template": "comparison",
+      "path": "/workspace/R03?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Request or assess new material",
+        "target": "R04"
+      },
+      "secondary": {
+        "label": "Review hearing",
+        "target": "R05"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "R04",
+      "title": "New material and review clarification",
+      "role": "Review",
+      "template": "form",
+      "path": "/workspace/R04?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Continue review",
+        "target": "R03"
+      },
+      "secondary": {
+        "label": "Issue hearing notice",
+        "target": "R05"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "R05",
+      "title": "Review hearing and submissions",
+      "role": "Review",
+      "template": "calendar",
+      "path": "/workspace/R05?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Prepare review decision",
+        "target": "R06"
+      },
+      "secondary": {
+        "label": "Review evidence",
+        "target": "R03"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "R06",
+      "title": "Reasoned review or appeal decision",
+      "role": "Review",
+      "template": "approval",
+      "path": "/workspace/R06?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Issue review decision",
+        "target": "R07"
+      },
+      "secondary": {
+        "label": "Original vs review comparison",
+        "target": "R08"
+      },
+      "field_count": 9
+    },
+    {
+      "id": "R07",
+      "title": "Track review-ordered action",
+      "role": "Review",
+      "template": "actions",
+      "path": "/workspace/R07?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Compare final outcomes",
+        "target": "R08"
+      },
+      "secondary": {
+        "label": "Implementation evidence",
+        "target": "O16"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "R08",
+      "title": "Original and reviewed outcome comparison",
+      "role": "Review",
+      "template": "comparison",
+      "path": "/workspace/R08?workspace=Review",
+      "parent": null,
+      "primary": {
+        "label": "Communicate reviewed outcome",
+        "target": "C13"
+      },
+      "secondary": {
+        "label": "Ordered actions",
+        "target": "R07"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "L01",
+      "title": "MHADA grievance command centre",
+      "role": "Leadership",
+      "template": "dashboard",
+      "path": "/workspace/L01?workspace=Leadership",
+      "parent": null,
+      "primary": {
+        "label": "Compare boards",
+        "target": "L02"
+      },
+      "secondary": {
+        "label": "Outcome quality",
+        "target": "L05"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "L02",
+      "title": "Board and office comparison",
+      "role": "Leadership",
+      "template": "analytics",
+      "path": "/workspace/L02?workspace=Leadership",
+      "parent": null,
+      "primary": {
+        "label": "Inspect a board queue",
+        "target": "V01"
+      },
+      "secondary": {
+        "label": "Workload planning",
+        "target": "V02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "L03",
+      "title": "Categories, sources and receipt cohorts",
+      "role": "Leadership",
+      "template": "analytics",
+      "path": "/workspace/L03?workspace=Leadership",
+      "parent": null,
+      "primary": {
+        "label": "Open filtered intake records",
+        "target": "I01"
+      },
+      "secondary": {
+        "label": "Source reconciliation",
+        "target": "I05"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "L04",
+      "title": "Property clusters and recurring causes",
+      "role": "Leadership",
+      "template": "clusters",
+      "path": "/workspace/L04?workspace=Leadership",
+      "parent": null,
+      "primary": {
+        "label": "Open preventive action programme",
+        "target": "V10"
+      },
+      "secondary": {
+        "label": "Related-case review",
+        "target": "I09"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "L05",
+      "title": "Remedy quality and citizen outcomes",
+      "role": "Leadership",
+      "template": "analytics",
+      "path": "/workspace/L05?workspace=Leadership",
+      "parent": null,
+      "primary": {
+        "label": "Inspect closure quality",
+        "target": "V08"
+      },
+      "secondary": {
+        "label": "Report builder",
+        "target": "L06"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "L06",
+      "title": "Reports and governed exports",
+      "role": "Leadership",
+      "template": "report",
+      "path": "/workspace/L06?workspace=Leadership",
+      "parent": null,
+      "primary": {
+        "label": "Preview audit report pack",
+        "target": "A06"
+      },
+      "secondary": {
+        "label": "Command centre",
+        "target": "L01"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "A01",
+      "title": "Audit control overview",
+      "role": "Audit",
+      "template": "dashboard",
+      "path": "/workspace/A01?workspace=Audit",
+      "parent": null,
+      "primary": {
+        "label": "Inspect case history",
+        "target": "A02"
+      },
+      "secondary": {
+        "label": "Migration controls",
+        "target": "A04"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "A02",
+      "title": "Immutable case event history",
+      "role": "Audit",
+      "template": "timeline",
+      "path": "/workspace/A02?workspace=Audit",
+      "parent": null,
+      "primary": {
+        "label": "Inspect decision evidence",
+        "target": "A03"
+      },
+      "secondary": {
+        "label": "Case overview",
+        "target": "O02"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "A03",
+      "title": "Decision-to-evidence trace",
+      "role": "Audit",
+      "template": "evidence",
+      "path": "/workspace/A03?workspace=Audit",
+      "parent": null,
+      "primary": {
+        "label": "Open original page",
+        "target": "O09"
+      },
+      "secondary": {
+        "label": "Reviewed comparison",
+        "target": "R08"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "A04",
+      "title": "Import lineage and reconciliation audit",
+      "role": "Audit",
+      "template": "comparison",
+      "path": "/workspace/A04?workspace=Audit",
+      "parent": null,
+      "primary": {
+        "label": "Inspect import receipt",
+        "target": "I05"
+      },
+      "secondary": {
+        "label": "Validation exceptions",
+        "target": "I04"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "A05",
+      "title": "Access and restricted-evidence audit",
+      "role": "Audit",
+      "template": "matrix",
+      "path": "/workspace/A05?workspace=Audit",
+      "parent": null,
+      "primary": {
+        "label": "Review permission configuration",
+        "target": "T03"
+      },
+      "secondary": {
+        "label": "Restricted-access pattern",
+        "target": "M10"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "A06",
+      "title": "Audit pack and evidence export",
+      "role": "Audit",
+      "template": "report",
+      "path": "/workspace/A06?workspace=Audit",
+      "parent": null,
+      "primary": {
+        "label": "Review export summary",
+        "target": "L06"
+      },
+      "secondary": {
+        "label": "Audit overview",
+        "target": "A01"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "T01",
+      "title": "Organisation and jurisdiction directory",
+      "role": "Admin",
+      "template": "tree",
+      "path": "/workspace/T01?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Manage officer assignments",
+        "target": "T02"
+      },
+      "secondary": {
+        "label": "Routing rules",
+        "target": "T04"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "T02",
+      "title": "Officers, substitutes and delegation",
+      "role": "Admin",
+      "template": "form",
+      "path": "/workspace/T02?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Save effective assignment",
+        "target": "V02"
+      },
+      "secondary": {
+        "label": "Unaccepted assignments",
+        "target": "V03"
+      },
+      "field_count": 12
+    },
+    {
+      "id": "T03",
+      "title": "Role and case-access permissions",
+      "role": "Admin",
+      "template": "matrix",
+      "path": "/workspace/T03?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Review access audit",
+        "target": "A05"
+      },
+      "secondary": {
+        "label": "Organisation directory",
+        "target": "T01"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "T04",
+      "title": "Category and routing rule book",
+      "role": "Admin",
+      "template": "routing",
+      "path": "/workspace/T04?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Preview a routing result",
+        "target": "I08"
+      },
+      "secondary": {
+        "label": "Classification screen",
+        "target": "I07"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "T05",
+      "title": "SLA policy and clock configuration",
+      "role": "Admin",
+      "template": "sla",
+      "path": "/workspace/T05?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Review holiday calendar",
+        "target": "T06"
+      },
+      "secondary": {
+        "label": "Intervention workspace",
+        "target": "V05"
+      },
+      "field_count": 12
+    },
+    {
+      "id": "T06",
+      "title": "Working calendars and holidays",
+      "role": "Admin",
+      "template": "calendar",
+      "path": "/workspace/T06?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Save reviewed calendar",
+        "target": "T05"
+      },
+      "secondary": {
+        "label": "SLA policy",
+        "target": "T05"
+      },
+      "field_count": 8
+    },
+    {
+      "id": "T07",
+      "title": "Closure, outcome and review policies",
+      "role": "Admin",
+      "template": "policy",
+      "path": "/workspace/T07?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Review legacy closure workflow",
+        "target": "V09"
+      },
+      "secondary": {
+        "label": "Closure approval",
+        "target": "V08"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "T08",
+      "title": "Source integrations and synchronisation",
+      "role": "Admin",
+      "template": "integrations",
+      "path": "/workspace/T08?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Inspect exceptions",
+        "target": "T09"
+      },
+      "secondary": {
+        "label": "Import alternative",
+        "target": "I02"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "T09",
+      "title": "Retries, conflicts and failed updates",
+      "role": "Admin",
+      "template": "queue",
+      "path": "/workspace/T09?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Review selected exception",
+        "target": "I05"
+      },
+      "secondary": {
+        "label": "Integration status",
+        "target": "T08"
+      },
+      "field_count": 0
+    },
+    {
+      "id": "T10",
+      "title": "Communication templates and language",
+      "role": "Admin",
+      "template": "communication",
+      "path": "/workspace/T10?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Preview citizen communication",
+        "target": "O18"
+      },
+      "secondary": {
+        "label": "Delivery retry pattern",
+        "target": "M11"
+      },
+      "field_count": 5
+    },
+    {
+      "id": "T11",
+      "title": "Evidence retention and document access",
+      "role": "Admin",
+      "template": "evidence",
+      "path": "/workspace/T11?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Inspect access audit",
+        "target": "A05"
+      },
+      "secondary": {
+        "label": "Evidence catalogue",
+        "target": "O08"
+      },
+      "field_count": 7
+    },
+    {
+      "id": "T12",
+      "title": "Service configuration and accessible intake",
+      "role": "Admin",
+      "template": "settings",
+      "path": "/workspace/T12?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Preview citizen service home",
+        "target": "C01"
+      },
+      "secondary": {
+        "label": "Profile preferences",
+        "target": "S06"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "T13",
+      "title": "AI assistance and controlled knowledge",
+      "role": "Admin",
+      "template": "policy",
+      "path": "/workspace/T13?workspace=Admin",
+      "parent": null,
+      "primary": {
+        "label": "Preview officer assistance",
+        "target": "O19"
+      },
+      "secondary": {
+        "label": "Policy version register",
+        "target": "T04"
+      },
+      "field_count": 10
+    },
+    {
+      "id": "M01",
+      "title": "Confirm grievance submission",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/C06?workspace=Citizen&dialog=M01",
+      "parent": "C06",
+      "primary": {
+        "label": "Submit grievance",
+        "target": "C07"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "C06"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "M02",
+      "title": "Add a new evidence version",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/C10?workspace=Citizen&dialog=M02",
+      "parent": "C10",
+      "primary": {
+        "label": "Save new version",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O08"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "M03",
+      "title": "Confirm related-case link",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/I09?workspace=Intake&dialog=M03",
+      "parent": "I09",
+      "primary": {
+        "label": "Create reviewed link",
+        "target": "I07"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "I09"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "M04",
+      "title": "Decline or redirect assignment",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/O04?workspace=Officer&dialog=M04",
+      "parent": "O04",
+      "primary": {
+        "label": "Send to supervisor",
+        "target": "V03"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O04"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "M05",
+      "title": "Request an authorised deadline exception",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/V05?workspace=Supervisor&dialog=M05",
+      "parent": "V05",
+      "primary": {
+        "label": "Send for approval",
+        "target": "V05"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "V05"
+      },
+      "field_count": 6
+    },
+    {
+      "id": "M06",
+      "title": "Create a restricted referral",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/I10?workspace=Intake&dialog=M06",
+      "parent": "I10",
+      "primary": {
+        "label": "Send restricted referral",
+        "target": "I11"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "I10"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "M07",
+      "title": "Return ATR for correction",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/V07?workspace=Supervisor&dialog=M07",
+      "parent": "V07",
+      "primary": {
+        "label": "Return with specific corrections",
+        "target": "O17"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "V07"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "M08",
+      "title": "Request hearing rescheduling",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/C14?workspace=Citizen&dialog=M08",
+      "parent": "C14",
+      "primary": {
+        "label": "Record reschedule request",
+        "target": "O11"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O11"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "M09",
+      "title": "Confirm the challenge mechanism",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/C12?workspace=Citizen&dialog=M09",
+      "parent": "C12",
+      "primary": {
+        "label": "Submit linked challenge",
+        "target": "C13"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "C12"
+      },
+      "field_count": 4
+    },
+    {
+      "id": "M10",
+      "title": "Restricted document access",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/C10?workspace=Citizen&dialog=M10",
+      "parent": "C10",
+      "primary": {
+        "label": "Return to permitted evidence",
+        "target": "O08"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O09"
+      },
+      "field_count": 2
+    },
+    {
+      "id": "M11",
+      "title": "Retry failed communication",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/O18?workspace=Officer&dialog=M11",
+      "parent": "O18",
+      "primary": {
+        "label": "Record permitted retry",
+        "target": "O18"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "O18"
+      },
+      "field_count": 3
+    },
+    {
+      "id": "M12",
+      "title": "Commit reconciled import batch",
+      "role": "Shared",
+      "template": "modal",
+      "path": "/workspace/I05?workspace=Intake&dialog=M12",
+      "parent": "I05",
+      "primary": {
+        "label": "Commit and issue receipt",
+        "target": "I01"
+      },
+      "secondary": {
+        "label": "Cancel and return",
+        "target": "I05"
+      },
+      "field_count": 3
+    }
+  ]
+}

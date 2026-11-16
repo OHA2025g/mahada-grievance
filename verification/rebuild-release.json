@@ -1,0 +1,17 @@
+{
+  "source_commit": "6e1084d50e366cbc0fcb0b52add056c6a58e697f",
+  "deployed_url": "https://mhada-grievance-application.singh-aghoreshwar.chatgpt.site",
+  "deployed_at": "2026-10-15T06:30:07Z",
+  "design_version": "2.0",
+  "screens": 113,
+  "main_pages": 101,
+  "contextual_dialogs": 12,
+  "workspaces": 9,
+  "kpi_definitions": 120,
+  "form_controls": 436,
+  "api_checks": 184,
+  "navigation_checks": 2036,
+  "browser_verification": false,
+  "production_build": "passed",
+  "deployment": "succeeded"
+}
